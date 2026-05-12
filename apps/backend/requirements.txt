@@ -1,9 +1,0 @@
-fastapi
-uvicorn[standard]
-pandas
-httpx
-python-dotenv
-asyncpg
-sqlalchemy[asyncio]
-psycopg2-binary
-pydantic

@@ -150,4 +150,5 @@ Format: `[YYYY-MM-DD] [file/area] perubahan singkat`
 
 ```
 [2026-05-13] [init] repo scaffolded, Next.js installed, backend structure created
+[2026-05-13] [cleanup] removed legacy apps/ monorepo folder
 ```
