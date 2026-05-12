@@ -75,47 +75,45 @@
 ## 7. Struktur Repo
 
 ```
-shift-plus/
-├── apps/
-│   ├── frontend/               # Next.js app
-│   │   ├── app/
-│   │   │   ├── page.tsx        # Single-page dashboard entry
-│   │   │   └── layout.tsx
-│   │   ├── components/
-│   │   │   ├── widgets/        # Tiap widget = 1 file
-│   │   │   ├── charts/         # Tiap chart = 1 file
-│   │   │   └── ui/             # Komponen primitif (card, badge, dll)
-│   │   ├── lib/
-│   │   │   ├── api.ts          # Semua fungsi fetch ke backend
-│   │   │   └── constants.ts    # Threshold, label, konstanta sistem
-│   │   └── types/
-│   │       └── index.ts        # Type definitions
-│   │
-│   └── backend/                # FastAPI app
-│       ├── main.py             # Entry point, route registration
-│       ├── routers/
-│       │   ├── waduk.py        # Endpoint data PJT II
-│       │   ├── bmkg.py         # Endpoint proxy BMKG
-│       │   ├── solar.py        # Endpoint data NASA POWER
-│       │   └── rekomendasi.py  # Endpoint logika SHIFT+
-│       ├── services/
-│       │   ├── waduk_service.py
-│       │   ├── bmkg_service.py
-│       │   ├── solar_service.py
-│       │   └── shift_engine.py # Logika rule-based SHIFT+
-│       ├── data/
-│       │   └── pjt2_historical.json  # Dataset PJT II hardcoded
-│       └── models/
-│           └── schemas.py      # Pydantic schemas
-│
-├── docs/
+project-root/          ← Next.js app root (Vercel deploys from here)
+├── app/
+│   ├── page.tsx
+│   └── layout.tsx
+├── components/
+│   ├── widgets/
+│   ├── charts/
+│   └── ui/
+├── lib/
+│   ├── api.ts
+│   └── constants.ts
+├── types/
+│   └── index.ts
+├── backend/           ← FastAPI app (Coolify deploys from this subfolder)
+│   ├── main.py
+│   ├── routers/
+│   │   ├── waduk.py
+│   │   ├── bmkg.py
+│   │   ├── solar.py
+│   │   └── rekomendasi.py
+│   ├── services/
+│   │   ├── waduk_service.py
+│   │   ├── bmkg_service.py
+│   │   ├── solar_service.py
+│   │   └── shift_engine.py
+│   ├── data/
+│   │   └── pjt2_historical.json
+│   ├── models/
+│   │   └── schemas.py
+│   └── scripts/
+│       └── seed.py
+├── userdocs/
 │   ├── 01-project-brief-techstack.md
 │   ├── 02-frontend.md
 │   ├── 03-backend.md
 │   └── 04-implementation-notes.md
-│
-├── claude.md                   # Agent reference — wajib dibaca pertama
-└── README.md
+├── Agents.md
+├── Design.md
+└── .gitignore
 ```
 
 ---

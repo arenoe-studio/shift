@@ -12,11 +12,11 @@
 
 | Key | Value |
 |---|---|
-| Status | 🔴 Not started |
+| Status | 🟡 In Progress |
 | Frontend | Next.js → Vercel |
 | Backend | FastAPI → Coolify (Ubuntu Server) |
-| Last updated | — |
-| Last worked on | — |
+| Last updated | 2026-05-13 |
+| Last worked on | 2026-05-13 |
 
 ---
 
@@ -149,5 +149,5 @@ Ketiga data di atas
 Format: `[YYYY-MM-DD] [file/area] perubahan singkat`
 
 ```
-— (belum ada)
+[2026-05-13] [init] repo scaffolded, Next.js installed, backend structure created
 ```

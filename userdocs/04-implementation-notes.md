@@ -42,7 +42,7 @@ Agent harus mengerjakan dalam urutan ini. Jangan loncat tahap.
 
 ## 3. Seed Data NeonDB
 
-Seed dari `apps/backend/data/pjt2_historical.json`. Format:
+Seed dari `backend/data/pjt2_historical.json`. Format:
 
 ```json
 [
@@ -51,21 +51,27 @@ Seed dari `apps/backend/data/pjt2_historical.json`. Format:
 ]
 ```
 
-Buat script `apps/backend/scripts/seed.py` untuk insert ke NeonDB. Jalankan sekali saat setup awal. Script harus idempotent (cek duplikat sebelum insert).
+Buat script `backend/scripts/seed.py` untuk insert ke NeonDB. Jalankan sekali saat setup awal. Script harus idempotent (cek duplikat sebelum insert).
 
 ---
 
 ## 4. Deployment Notes
 
 ### Frontend (Vercel)
+- Vercel deploys from repo root, no Root Directory config needed
 - Set environment variable `NEXT_PUBLIC_API_URL` di Vercel dashboard → URL backend Coolify
 - Semua fetch di `lib/api.ts` menggunakan `process.env.NEXT_PUBLIC_API_URL` sebagai base URL
 
 ### Backend (Coolify — Ubuntu Server)
-- Buat `Dockerfile` di `apps/backend/`
+- Coolify deploys from `backend/` subfolder
+- Buat `Dockerfile` di `backend/`
 - Expose port `8000`
 - Set semua env var di Coolify dashboard, bukan di file `.env` yang di-commit
 - `.env` hanya untuk development lokal, masuk `.gitignore`
+
+### Env files
+- `.env.local` di repo root
+- `backend/.env`
 
 ---
 

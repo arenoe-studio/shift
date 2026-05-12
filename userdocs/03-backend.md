@@ -224,7 +224,7 @@ class RekomendasiSchema(BaseModel):
 
 ---
 
-## 5. Environment Variables (`apps/backend/.env`)
+## 5. Environment Variables (`backend/.env`)
 
 | Variable | Keterangan |
 |---|---|

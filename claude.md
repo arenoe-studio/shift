@@ -1,1 +1,1 @@
-# placeholder
+@AGENTS.md
