@@ -276,41 +276,25 @@ Format: `[YYYY-MM-DD] [file/area] perubahan singkat`
 [2026-05-13] [cleanup] removed log files and test scripts, optimized logo to WebP, updated .gitignore for production
 [2026-05-13] [cleanup] git hygiene: ignore .claude/ local state (prevent accidental commit)
 [2026-05-13] [git] committed MVP snapshot (pre-push)
+[2026-05-13] [git] initial push to github.com/arenoe-studio/shift
 ```
 
 
 <claude-mem-context>
 # Memory Context
 
-# [shift+] recent context, 2026-05-13 10:47pm GMT+7
+# [shift+] recent context, 2026-05-13 11:19pm GMT+7
 
 Legend: 🎯session 🔴bugfix 🟣feature 🔄refactor ✅change 🔵discovery ⚖️decision 🚨security_alert 🔐security_note
 Format: ID TIME TYPE TITLE
 Fetch details: get_observations([IDs]) | Search: mem-search skill
 
-Stats: 50 obs (17,742t read) | 504,129t work | 96% savings
+Stats: 50 obs (17,149t read) | 545,936t work | 97% savings
 
 ### May 13, 2026
 S29 Mobile responsive layout for SHIFT+ dashboard — floating bottom nav, scaled typography, stacked sections, table column hiding (May 13, 4:32 PM)
 S28 Uninstall RTK tools from Claude Code on Windows due to frequent PowerShell command failures (May 13, 4:32 PM)
-40 4:33p 🟣 Sidebar.tsx: Hidden on Mobile via max-md:hidden
-41 " 🟣 MetricCard.tsx: Responsive Typography and Padding for Mobile
-42 4:34p 🟣 DispatchRecommendation.tsx: Mobile Typography Scaling and Text Clamping
-43 " 🟣 ForecastStrip.tsx: Edge-Bleed Scroll Container and Tighter Card Widths for Mobile
-44 " 🟣 BenefitSummary.tsx: Row Value Scaled Down and Padding Normalized for Mobile
-45 " 🟣 WseChart.tsx: Responsive Height Container and Smaller Axis Ticks
-46 4:35p 🟣 GhiTurbineChart.tsx: Same Responsive Height Pattern Applied as WseChart
-47 " 🟣 LogTable.tsx: GHI and Volume Columns Hidden on Mobile, Full Responsive Table Treatment
-48 " 🟣 ForecastTable.tsx: Suhu and IRR Columns Hidden on Mobile, min-w Reduced to 800px
-49 4:36p 🟣 app/page.tsx: Dashboard Page Layout Fully Responsive — 2-col Metrics, Stacked Sections, Compact Padding
-50 " 🟣 app/forecast/page.tsx: Forecast Page Layout Made Mobile Responsive
-51 4:41p 🟣 Mobile Responsive Dashboard — Floating Bottom Nav + Full Layout Overhaul
-52 " ✅ Next.js Production Build Succeeded Post Mobile Responsive Changes
-53 " ✅ Agents.md Changelog Updated with Mobile Responsive Entry
-54 5:06p 🟣 HeroHeader Component Created for SHIFT+ Dashboard
-55 " 🟣 Mobile Bottom Nav Switched to Frosted Glass Pill Style
-56 " 🔵 DESIGN.md Belongs to a Different Project (WattVision, not SHIFT+)
-57 " 🔵 Existing DataStatusBar Component Structure Before Removal
+56 5:06p 🔵 DESIGN.md Belongs to a Different Project (WattVision, not SHIFT+)
 58 5:07p 🟣 HeroHeader.tsx Created — Full Implementation Details
 59 " 🟣 Mobile Bottom Nav Frosted Glass Applied in AppShell.tsx (Not Sidebar.tsx)
 60 " ✅ app/page.tsx Import Swapped: DataStatusBar → HeroHeader
@@ -344,6 +328,23 @@ S30 SHIFT+ Dashboard UI Refresh — HeroHeader component + frosted glass mobile 
 87 " ✅ MetricCard.tsx — removed fixed height, tightened padding to fit content snugly
 88 " ✅ Agents.md changelog updated for 2026-05-13 polish session
 89 " ✅ Polish session fully verified — build clean, dev server live, all changes confirmed in-file
+90 10:48p ✅ Pre-Git-Push Codebase Cleanup Session Initiated
+91 " ✅ .gitignore Hardened for Production Repository
+92 " 🟣 Logo Optimized from PNG to WebP via Sharp Script
+93 " ✅ Agents.md Changelog Updated for Cleanup Session
+94 " 🔵 Root Directory Audit: 13 Log Files Confirmed, No OUTLINE File Present
+95 10:49p 🔵 backend/database.py Is Actively Used — Must Not Be Deleted
+96 " 🔵 AGENTS.md Reveals Project Identity: SHIFT+ Is a Water Dam Dispatch Coordinator
+97 " ✅ 22 Log and Test Files Identified and Deletion Attempted
+98 10:50p ✅ Log File Deletion Partially Succeeded — uvicorn Logs Still Present in backend/
+99 " 🔵 uvicorn Log Files Locked by Unidentified Process — Multiple Kill Attempts Failed
+100 " 🔵 uvicorn Log File Lock Is Exclusive — Clear-Content Also Blocked
+101 " 🔵 Existing .gitignore Has Minimal Coverage — Missing Logs, IDE, Build Patterns
+102 10:51p ✅ .gitignore Replaced with Production-Ready Coverage (8 → 35+ Patterns)
+103 11:13p ✅ Pre-Git-Push Codebase Cleanup Session
+104 11:14p 🟣 Logo Optimized PNG→WebP with Full Reference Migration
+105 " 🔵 Build Succeeds; Bundle Sizes Exceed 500KB Threshold on All Routes
+106 " 🔵 uvicorn Log Files Cannot Be Deleted — File Lock From Running Backend Process
 
-Access 504k tokens of past work via get_observations([IDs]) or mem-search skill.
+Access 546k tokens of past work via get_observations([IDs]) or mem-search skill.
 </claude-mem-context>
