@@ -287,6 +287,7 @@ Format: `[YYYY-MM-DD] [file/area] perubahan singkat`
 [2026-05-13] [deploy] backend: added `backend/Dockerfile` + `backend/.dockerignore` (exclude pjt2_historical.json from image)
 [2026-05-13] [deploy] backend: production CORS origins + improved `/health` payload (service/version)
 [2026-05-13] [deploy] docs: added `DEPLOY.md` (Vercel + Coolify steps + checklist)
+[2026-05-13] [deploy] Vercel config, Coolify Dockerfile, production CORS, DEPLOY.md
 ```
 
 
