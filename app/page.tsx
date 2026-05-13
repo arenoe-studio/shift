@@ -2,8 +2,10 @@
 
 import { useEffect, useMemo, useState } from 'react'
 
-import GhiTurbineChart from '@/components/charts/GhiTurbineChart'
-import WseChart from '@/components/charts/WseChart'
+import dynamic from 'next/dynamic'
+
+const WseChart = dynamic(() => import('@/components/charts/WseChart'), { ssr: false })
+const GhiTurbineChart = dynamic(() => import('@/components/charts/GhiTurbineChart'), { ssr: false })
 import { useAppShell } from '@/components/layout/AppShell'
 import HeroHeader from '@/components/layout/HeroHeader'
 import AlertBar from '@/components/ui/AlertBar'

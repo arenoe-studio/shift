@@ -2,8 +2,10 @@
 
 import { useEffect, useRef, useState } from 'react'
 
-import ForecastEnergyChart from '@/components/charts/ForecastEnergyChart'
-import ForecastWseChart from '@/components/charts/ForecastWseChart'
+import dynamic from 'next/dynamic'
+
+const ForecastWseChart = dynamic(() => import('@/components/charts/ForecastWseChart'), { ssr: false })
+const ForecastEnergyChart = dynamic(() => import('@/components/charts/ForecastEnergyChart'), { ssr: false })
 import { useAppShell } from '@/components/layout/AppShell'
 import HeroHeader from '@/components/layout/HeroHeader'
 import Card from '@/components/ui/Card'

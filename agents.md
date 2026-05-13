@@ -76,6 +76,7 @@ Update tabel ini setiap `npm install` atau `pip install` baru.
 | lucide-react | Icon set | — |
 | framer-motion | Sidebar animation + motion UI | — |
 | sharp | Optimize assets (PNG→WebP) | ✅ |
+| @next/bundle-analyzer | Bundle analysis (webpack) | ✅ |
 
 ### Backend (`backend/`)
 | Package | Fungsi | Status |
@@ -277,6 +278,11 @@ Format: `[YYYY-MM-DD] [file/area] perubahan singkat`
 [2026-05-13] [cleanup] git hygiene: ignore .claude/ local state (prevent accidental commit)
 [2026-05-13] [git] committed MVP snapshot (pre-push)
 [2026-05-13] [git] initial push to github.com/arenoe-studio/shift
+[2026-05-13] [perf] added bundle analyzer config (ANALYZE=true + webpack build) + next.config optimizations scaffold
+[2026-05-13] [perf] dynamic imports for charts (ssr:false) in app/page.tsx + app/forecast/page.tsx
+[2026-05-13] [perf] HeroHeader: framer-motion → CSS fadeIn animation (globals.css animate-fadeIn)
+[2026-05-13] [perf] recharts imports verified: named-only (no wildcard) across chart components
+[2026-05-13] [perf] bundle optimization, dynamic chart imports, CSS animation replacing framer-motion
 ```
 
 

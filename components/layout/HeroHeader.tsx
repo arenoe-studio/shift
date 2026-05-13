@@ -1,6 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import { Clock, MapPin } from 'lucide-react'
 
 type HeroHeaderProps = {
@@ -26,16 +25,13 @@ function StatusDot({ state, size = 6 }: { state: 'live' | 'cached' | 'error'; si
 
 export default function HeroHeader({ lastUpdated, bmkgStatus, neondbStatus, nasaStatus }: HeroHeaderProps) {
   return (
-    <motion.header
-      className="w-full relative overflow-hidden"
+    <header
+      className="w-full relative overflow-hidden animate-fadeIn"
       style={{
         background: '#FFFFFF',
         borderBottom: '1px solid rgba(30,33,120,0.08)',
         boxShadow: '0 2px 20px rgba(30,33,120,0.06)',
       }}
-      initial={{ opacity: 0, y: -6 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: 'easeOut' }}
     >
       <div
         className="absolute inset-0 pointer-events-none"
@@ -151,6 +147,6 @@ export default function HeroHeader({ lastUpdated, bmkgStatus, neondbStatus, nasa
           </div>
         </div>
       </div>
-    </motion.header>
+    </header>
   )
 }
