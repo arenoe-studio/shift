@@ -275,6 +275,7 @@ Format: `[YYYY-MM-DD] [file/area] perubahan singkat`
 [2026-05-13] [cleanup] logo optimized: PNG → WebP (public/logo.webp), updated img src refs, deleted public/logo.png
 [2026-05-13] [cleanup] removed log files and test scripts, optimized logo to WebP, updated .gitignore for production
 [2026-05-13] [cleanup] git hygiene: ignore .claude/ local state (prevent accidental commit)
+[2026-05-13] [git] committed MVP snapshot (pre-push)
 ```
 
 
