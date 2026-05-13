@@ -6,6 +6,7 @@ backend/venv/
 # Environment
 .env
 .env.local
+.env.production.local
 backend/.env
 
 # Python

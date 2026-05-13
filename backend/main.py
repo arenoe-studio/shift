@@ -13,14 +13,18 @@ from routers.waduk import router as waduk_router
 
 app = FastAPI(title="SHIFT+ Backend", version="0.1.0")
 
-frontend_url = os.getenv("FRONTEND_URL")
-allow_origins = [o for o in [frontend_url, "http://localhost:3000"] if o]
+allowed_origins = [
+    os.getenv("FRONTEND_URL", "http://localhost:3000"),
+    "https://shift.arenoe-studio.my.id",
+    "http://localhost:3000",
+]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=allow_origins,
-    allow_methods=["*"],
+    allow_origins=allowed_origins,
+    allow_methods=["GET"],
     allow_headers=["*"],
+    allow_credentials=False,
 )
 
 app.include_router(waduk_router, prefix="/api")
@@ -32,4 +36,8 @@ app.include_router(forecast_router, prefix="/api")
 
 @app.get("/health")
 async def health() -> dict[str, str]:
-    return {"status": "ok"}
+    return {
+        "status": "ok",
+        "service": "SHIFT+ API",
+        "version": "1.0.0",
+    }

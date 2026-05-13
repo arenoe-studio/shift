@@ -283,29 +283,28 @@ Format: `[YYYY-MM-DD] [file/area] perubahan singkat`
 [2026-05-13] [perf] HeroHeader: framer-motion → CSS fadeIn animation (globals.css animate-fadeIn)
 [2026-05-13] [perf] recharts imports verified: named-only (no wildcard) across chart components
 [2026-05-13] [perf] bundle optimization, dynamic chart imports, CSS animation replacing framer-motion
+[2026-05-13] [deploy] frontend: added `vercel.json`, added `.env.production.local` (gitignored) + committed `.env.example`
+[2026-05-13] [deploy] backend: added `backend/Dockerfile` + `backend/.dockerignore` (exclude pjt2_historical.json from image)
+[2026-05-13] [deploy] backend: production CORS origins + improved `/health` payload (service/version)
+[2026-05-13] [deploy] docs: added `DEPLOY.md` (Vercel + Coolify steps + checklist)
 ```
 
 
 <claude-mem-context>
 # Memory Context
 
-# [shift+] recent context, 2026-05-13 11:19pm GMT+7
+# [shift+] recent context, 2026-05-13 11:35pm GMT+7
 
 Legend: 🎯session 🔴bugfix 🟣feature 🔄refactor ✅change 🔵discovery ⚖️decision 🚨security_alert 🔐security_note
 Format: ID TIME TYPE TITLE
 Fetch details: get_observations([IDs]) | Search: mem-search skill
 
-Stats: 50 obs (17,149t read) | 545,936t work | 97% savings
+Stats: 50 obs (16,443t read) | 541,363t work | 97% savings
 
 ### May 13, 2026
 S29 Mobile responsive layout for SHIFT+ dashboard — floating bottom nav, scaled typography, stacked sections, table column hiding (May 13, 4:32 PM)
 S28 Uninstall RTK tools from Claude Code on Windows due to frequent PowerShell command failures (May 13, 4:32 PM)
-56 5:06p 🔵 DESIGN.md Belongs to a Different Project (WattVision, not SHIFT+)
-58 5:07p 🟣 HeroHeader.tsx Created — Full Implementation Details
-59 " 🟣 Mobile Bottom Nav Frosted Glass Applied in AppShell.tsx (Not Sidebar.tsx)
-60 " ✅ app/page.tsx Import Swapped: DataStatusBar → HeroHeader
-61 5:08p ✅ HeroHeader Integrated in Both Pages; Forecast Page Uses Partial Status Data
-62 " 🔴 Missing Closing Div Fixed in app/forecast/page.tsx
+62 5:08p 🔴 Missing Closing Div Fixed in app/forecast/page.tsx
 63 " ✅ Agents.md Updated: HeroHeader Registered, Changelog Appended
 64 " 🔵 Production Build Passes Clean After HeroHeader and Frosted Glass Nav Changes
 S30 SHIFT+ Dashboard UI Refresh — HeroHeader component + frosted glass mobile bottom nav (frontend-only, no backend changes) (May 13, 5:08 PM)
@@ -351,6 +350,11 @@ S30 SHIFT+ Dashboard UI Refresh — HeroHeader component + frosted glass mobile 
 104 11:14p 🟣 Logo Optimized PNG→WebP with Full Reference Migration
 105 " 🔵 Build Succeeds; Bundle Sizes Exceed 500KB Threshold on All Routes
 106 " 🔵 uvicorn Log Files Cannot Be Deleted — File Lock From Running Backend Process
+107 11:19p 🟣 SHIFT+ Dashboard MVP — Initial GitHub Push
+108 11:20p 🟣 SHIFT+ MVP Committed — 67 Files, Full Stack Snapshot
+109 " ✅ Git Hygiene — .claude/ Excluded and Push to GitHub Succeeded
+110 " ✅ SHIFT+ GitHub Push Finalized — HEAD Confirmed and Changelog Closed
+111 11:23p ✅ agents.md Changelog Pushed — Final Commit on Main
 
-Access 546k tokens of past work via get_observations([IDs]) or mem-search skill.
+Access 541k tokens of past work via get_observations([IDs]) or mem-search skill.
 </claude-mem-context>
