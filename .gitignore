@@ -1,8 +1,41 @@
+# Dependencies
 node_modules/
 .next/
 backend/venv/
-__pycache__/
-*.pyc
+
+# Environment
 .env
 .env.local
+backend/.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Logs
+*.log
+*.out.log
+*.err.log
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/
+out/
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Assets (source-only)
+components/logo/
+
+# Codex/AI local state
+.claude/

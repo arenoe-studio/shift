@@ -1,0 +1,2186 @@
+[
+  {
+    "tahun": 2000,
+    "bulan": "Jan",
+    "wse": 99.596129,
+    "irr": 4.323194,
+    "turbine_outflow": 192.209677
+  },
+  {
+    "tahun": 2000,
+    "bulan": "Feb",
+    "wse": 99.10069,
+    "irr": 4.710231,
+    "turbine_outflow": 171.315517
+  },
+  {
+    "tahun": 2000,
+    "bulan": "Mar",
+    "wse": 97.834516,
+    "irr": 4.868806,
+    "turbine_outflow": 98.347742
+  },
+  {
+    "tahun": 2000,
+    "bulan": "Apr",
+    "wse": 100.967333,
+    "irr": 4.747307,
+    "turbine_outflow": 116.13
+  },
+  {
+    "tahun": 2000,
+    "bulan": "May",
+    "wse": 101.677419,
+    "irr": 4.876519,
+    "turbine_outflow": 161.276452
+  },
+  {
+    "tahun": 2000,
+    "bulan": "Jun",
+    "wse": 101.873333,
+    "irr": 4.478203,
+    "turbine_outflow": 167.725687
+  },
+  {
+    "tahun": 2000,
+    "bulan": "Jul",
+    "wse": 99.865806,
+    "irr": 5.108597,
+    "turbine_outflow": 170.376774
+  },
+  {
+    "tahun": 2000,
+    "bulan": "Aug",
+    "wse": 97.553871,
+    "irr": 5.3268,
+    "turbine_outflow": 161.846774
+  },
+  {
+    "tahun": 2000,
+    "bulan": "Sep",
+    "wse": 96.915333,
+    "irr": 5.97141,
+    "turbine_outflow": 158.519667
+  },
+  {
+    "tahun": 2000,
+    "bulan": "Oct",
+    "wse": 93.350323,
+    "irr": 5.1277,
+    "turbine_outflow": 150.612581
+  },
+  {
+    "tahun": 2000,
+    "bulan": "Nov",
+    "wse": 94.422667,
+    "irr": 4.467107,
+    "turbine_outflow": 171.862
+  },
+  {
+    "tahun": 2000,
+    "bulan": "Dec",
+    "wse": 96.382581,
+    "irr": 5.397584,
+    "turbine_outflow": 180.765161
+  },
+  {
+    "tahun": 2001,
+    "bulan": "Jan",
+    "wse": 95.93871,
+    "irr": 4.897632,
+    "turbine_outflow": 143.23871
+  },
+  {
+    "tahun": 2001,
+    "bulan": "Feb",
+    "wse": 96.231786,
+    "irr": 4.299332,
+    "turbine_outflow": 103.173929
+  },
+  {
+    "tahun": 2001,
+    "bulan": "Mar",
+    "wse": 98.643226,
+    "irr": 4.604365,
+    "turbine_outflow": 103.346452
+  },
+  {
+    "tahun": 2001,
+    "bulan": "Apr",
+    "wse": 103.301333,
+    "irr": 5.171563,
+    "turbine_outflow": 140.4
+  },
+  {
+    "tahun": 2001,
+    "bulan": "May",
+    "wse": 105.733871,
+    "irr": 5.006126,
+    "turbine_outflow": 164.029355
+  },
+  {
+    "tahun": 2001,
+    "bulan": "Jun",
+    "wse": 107.036,
+    "irr": 4.671917,
+    "turbine_outflow": 162.390667
+  },
+  {
+    "tahun": 2001,
+    "bulan": "Jul",
+    "wse": 106.034194,
+    "irr": 5.009016,
+    "turbine_outflow": 147.779032
+  },
+  {
+    "tahun": 2001,
+    "bulan": "Aug",
+    "wse": 106.686774,
+    "irr": 5.604158,
+    "turbine_outflow": 185.866452
+  },
+  {
+    "tahun": 2001,
+    "bulan": "Sep",
+    "wse": 104.887333,
+    "irr": 5.934013,
+    "turbine_outflow": 201.817333
+  },
+  {
+    "tahun": 2001,
+    "bulan": "Oct",
+    "wse": 103.010645,
+    "irr": 4.877855,
+    "turbine_outflow": 200.631613
+  },
+  {
+    "tahun": 2001,
+    "bulan": "Nov",
+    "wse": 103.079667,
+    "irr": 4.71054,
+    "turbine_outflow": 204.379333
+  },
+  {
+    "tahun": 2001,
+    "bulan": "Dec",
+    "wse": 105.201935,
+    "irr": 5.50051,
+    "turbine_outflow": 191.76
+  },
+  {
+    "tahun": 2002,
+    "bulan": "Jan",
+    "wse": 104.329355,
+    "irr": 4.429026,
+    "turbine_outflow": 181.214516
+  },
+  {
+    "tahun": 2002,
+    "bulan": "Feb",
+    "wse": 106.261786,
+    "irr": 3.811082,
+    "turbine_outflow": 175.85
+  },
+  {
+    "tahun": 2002,
+    "bulan": "Mar",
+    "wse": 105.734516,
+    "irr": 5.583261,
+    "turbine_outflow": 190.730645
+  },
+  {
+    "tahun": 2002,
+    "bulan": "Apr",
+    "wse": 107.299333,
+    "irr": 5.40489,
+    "turbine_outflow": 190.977667
+  },
+  {
+    "tahun": 2002,
+    "bulan": "May",
+    "wse": 106.985806,
+    "irr": 5.105819,
+    "turbine_outflow": 191.781935
+  },
+  {
+    "tahun": 2002,
+    "bulan": "Jun",
+    "wse": 105.073,
+    "irr": 5.02253,
+    "turbine_outflow": 188.19
+  },
+  {
+    "tahun": 2002,
+    "bulan": "Jul",
+    "wse": 102.530323,
+    "irr": 4.9553,
+    "turbine_outflow": 194.621935
+  },
+  {
+    "tahun": 2002,
+    "bulan": "Aug",
+    "wse": 99.660968,
+    "irr": 5.773348,
+    "turbine_outflow": 187.906774
+  },
+  {
+    "tahun": 2002,
+    "bulan": "Sep",
+    "wse": 96.772667,
+    "irr": 5.80343,
+    "turbine_outflow": 156.869
+  },
+  {
+    "tahun": 2002,
+    "bulan": "Oct",
+    "wse": 93.233226,
+    "irr": 6.122852,
+    "turbine_outflow": 180.569355
+  },
+  {
+    "tahun": 2002,
+    "bulan": "Nov",
+    "wse": 88.577333,
+    "irr": 5.0767,
+    "turbine_outflow": 155.785667
+  },
+  {
+    "tahun": 2002,
+    "bulan": "Dec",
+    "wse": 87.923548,
+    "irr": 5.078871,
+    "turbine_outflow": 149.942903
+  },
+  {
+    "tahun": 2003,
+    "bulan": "Jan",
+    "wse": 88.325806,
+    "irr": 5.560639,
+    "turbine_outflow": 149.014839
+  },
+  {
+    "tahun": 2003,
+    "bulan": "Feb",
+    "wse": 86.888571,
+    "irr": 4.439625,
+    "turbine_outflow": 129.223929
+  },
+  {
+    "tahun": 2003,
+    "bulan": "Mar",
+    "wse": 89.555806,
+    "irr": 5.025371,
+    "turbine_outflow": 101.743548
+  },
+  {
+    "tahun": 2003,
+    "bulan": "Apr",
+    "wse": 91.604667,
+    "irr": 5.184447,
+    "turbine_outflow": 107.324
+  },
+  {
+    "tahun": 2003,
+    "bulan": "May",
+    "wse": 92.485161,
+    "irr": 4.928035,
+    "turbine_outflow": 126.022581
+  },
+  {
+    "tahun": 2003,
+    "bulan": "Jun",
+    "wse": 91.475667,
+    "irr": 5.193247,
+    "turbine_outflow": 161.088333
+  },
+  {
+    "tahun": 2003,
+    "bulan": "Jul",
+    "wse": 86.82071,
+    "irr": 5.468806,
+    "turbine_outflow": 136.022258
+  },
+  {
+    "tahun": 2003,
+    "bulan": "Aug",
+    "wse": 82.164194,
+    "irr": 5.465968,
+    "turbine_outflow": 81.793871
+  },
+  {
+    "tahun": 2003,
+    "bulan": "Sep",
+    "wse": 77.810833,
+    "irr": 5.72667,
+    "turbine_outflow": 85.237333
+  },
+  {
+    "tahun": 2003,
+    "bulan": "Oct",
+    "wse": 78.560323,
+    "irr": 5.437029,
+    "turbine_outflow": 70.632581
+  },
+  {
+    "tahun": 2003,
+    "bulan": "Nov",
+    "wse": 80.799333,
+    "irr": 4.86916,
+    "turbine_outflow": 100.212
+  },
+  {
+    "tahun": 2003,
+    "bulan": "Dec",
+    "wse": 83.498065,
+    "irr": 4.320329,
+    "turbine_outflow": 109.103548
+  },
+  {
+    "tahun": 2004,
+    "bulan": "Jan",
+    "wse": 87.395161,
+    "irr": 4.816445,
+    "turbine_outflow": 97.637419
+  },
+  {
+    "tahun": 2004,
+    "bulan": "Feb",
+    "wse": 91.757138,
+    "irr": 3.984462,
+    "turbine_outflow": 91.901355
+  },
+  {
+    "tahun": 2004,
+    "bulan": "Mar",
+    "wse": 96.900645,
+    "irr": 5.095855,
+    "turbine_outflow": 101.288065
+  },
+  {
+    "tahun": 2004,
+    "bulan": "Apr",
+    "wse": 99.974667,
+    "irr": 5.356033,
+    "turbine_outflow": 107.619333
+  },
+  {
+    "tahun": 2004,
+    "bulan": "May",
+    "wse": 103.170323,
+    "irr": 4.855771,
+    "turbine_outflow": 108.285161
+  },
+  {
+    "tahun": 2004,
+    "bulan": "Jun",
+    "wse": 103.302333,
+    "irr": 4.87975,
+    "turbine_outflow": 147.151
+  },
+  {
+    "tahun": 2004,
+    "bulan": "Jul",
+    "wse": 101.000968,
+    "irr": 4.913897,
+    "turbine_outflow": 136.350968
+  },
+  {
+    "tahun": 2004,
+    "bulan": "Aug",
+    "wse": 98.443226,
+    "irr": 5.785642,
+    "turbine_outflow": 155.115419
+  },
+  {
+    "tahun": 2004,
+    "bulan": "Sep",
+    "wse": 94.952667,
+    "irr": 5.735733,
+    "turbine_outflow": 165.231
+  },
+  {
+    "tahun": 2004,
+    "bulan": "Oct",
+    "wse": 93.254194,
+    "irr": 6.204584,
+    "turbine_outflow": 195.697742
+  },
+  {
+    "tahun": 2004,
+    "bulan": "Nov",
+    "wse": 89.107,
+    "irr": 5.048297,
+    "turbine_outflow": 170.732333
+  },
+  {
+    "tahun": 2004,
+    "bulan": "Dec",
+    "wse": 89.327097,
+    "irr": 4.287132,
+    "turbine_outflow": 128.786774
+  },
+  {
+    "tahun": 2005,
+    "bulan": "Jan",
+    "wse": 91.714516,
+    "irr": 4.296919,
+    "turbine_outflow": 96.634839
+  },
+  {
+    "tahun": 2005,
+    "bulan": "Feb",
+    "wse": 95.251429,
+    "irr": 4.701382,
+    "turbine_outflow": 99.997143
+  },
+  {
+    "tahun": 2005,
+    "bulan": "Mar",
+    "wse": 102.354194,
+    "irr": 5.137281,
+    "turbine_outflow": 89.464839
+  },
+  {
+    "tahun": 2005,
+    "bulan": "Apr",
+    "wse": 106.739667,
+    "irr": 5.111397,
+    "turbine_outflow": 139.312667
+  },
+  {
+    "tahun": 2005,
+    "bulan": "May",
+    "wse": 106.876129,
+    "irr": 5.00751,
+    "turbine_outflow": 159.539677
+  },
+  {
+    "tahun": 2005,
+    "bulan": "Jun",
+    "wse": 106.883,
+    "irr": 4.57095,
+    "turbine_outflow": 127.621
+  },
+  {
+    "tahun": 2005,
+    "bulan": "Jul",
+    "wse": 105.792903,
+    "irr": 4.836755,
+    "turbine_outflow": 131.595161
+  },
+  {
+    "tahun": 2005,
+    "bulan": "Aug",
+    "wse": 105.587742,
+    "irr": 5.275648,
+    "turbine_outflow": 154.509677
+  },
+  {
+    "tahun": 2005,
+    "bulan": "Sep",
+    "wse": 104.878,
+    "irr": 5.399163,
+    "turbine_outflow": 188.854333
+  },
+  {
+    "tahun": 2005,
+    "bulan": "Oct",
+    "wse": 103.325484,
+    "irr": 5.280874,
+    "turbine_outflow": 185.08
+  },
+  {
+    "tahun": 2005,
+    "bulan": "Nov",
+    "wse": 101.774667,
+    "irr": 5.336707,
+    "turbine_outflow": 184.562233
+  },
+  {
+    "tahun": 2005,
+    "bulan": "Dec",
+    "wse": 99.569355,
+    "irr": 4.290197,
+    "turbine_outflow": 208.243226
+  },
+  {
+    "tahun": 2006,
+    "bulan": "Jan",
+    "wse": 98.382258,
+    "irr": 4.297855,
+    "turbine_outflow": 213.15871
+  },
+  {
+    "tahun": 2006,
+    "bulan": "Feb",
+    "wse": 97.433214,
+    "irr": 4.930921,
+    "turbine_outflow": 157.213571
+  },
+  {
+    "tahun": 2006,
+    "bulan": "Mar",
+    "wse": 99.454839,
+    "irr": 4.782013,
+    "turbine_outflow": 133.439677
+  },
+  {
+    "tahun": 2006,
+    "bulan": "Apr",
+    "wse": 99.286667,
+    "irr": 4.89638,
+    "turbine_outflow": 119.372
+  },
+  {
+    "tahun": 2006,
+    "bulan": "May",
+    "wse": 99.614516,
+    "irr": 4.822939,
+    "turbine_outflow": 128.241935
+  },
+  {
+    "tahun": 2006,
+    "bulan": "Jun",
+    "wse": 97.708667,
+    "irr": 5.073267,
+    "turbine_outflow": 150.397667
+  },
+  {
+    "tahun": 2006,
+    "bulan": "Jul",
+    "wse": 95.777097,
+    "irr": 5.007742,
+    "turbine_outflow": 160.907419
+  },
+  {
+    "tahun": 2006,
+    "bulan": "Aug",
+    "wse": 93.855484,
+    "irr": 5.821339,
+    "turbine_outflow": 148.821613
+  },
+  {
+    "tahun": 2006,
+    "bulan": "Sep",
+    "wse": 90.165333,
+    "irr": 6.362077,
+    "turbine_outflow": 148.782333
+  },
+  {
+    "tahun": 2006,
+    "bulan": "Oct",
+    "wse": 85.745484,
+    "irr": 6.228494,
+    "turbine_outflow": 126.239677
+  },
+  {
+    "tahun": 2006,
+    "bulan": "Nov",
+    "wse": 81.461667,
+    "irr": 5.593337,
+    "turbine_outflow": 105.624
+  },
+  {
+    "tahun": 2006,
+    "bulan": "Dec",
+    "wse": 80.008065,
+    "irr": 4.707426,
+    "turbine_outflow": 98.230968
+  },
+  {
+    "tahun": 2007,
+    "bulan": "Jan",
+    "wse": 83.875806,
+    "irr": 5.300416,
+    "turbine_outflow": 98.543548
+  },
+  {
+    "tahun": 2007,
+    "bulan": "Feb",
+    "wse": 87.485357,
+    "irr": 4.293432,
+    "turbine_outflow": 47.542857
+  },
+  {
+    "tahun": 2007,
+    "bulan": "Mar",
+    "wse": 93.974516,
+    "irr": 4.737752,
+    "turbine_outflow": 74.766774
+  },
+  {
+    "tahun": 2007,
+    "bulan": "Apr",
+    "wse": 96.770333,
+    "irr": 4.580187,
+    "turbine_outflow": 82.357667
+  },
+  {
+    "tahun": 2007,
+    "bulan": "May",
+    "wse": 101.075806,
+    "irr": 4.697981,
+    "turbine_outflow": 117.866452
+  },
+  {
+    "tahun": 2007,
+    "bulan": "Jun",
+    "wse": 101.076333,
+    "irr": 4.53012,
+    "turbine_outflow": 144.658
+  },
+  {
+    "tahun": 2007,
+    "bulan": "Jul",
+    "wse": 100.258387,
+    "irr": 5.230884,
+    "turbine_outflow": 146.159677
+  },
+  {
+    "tahun": 2007,
+    "bulan": "Aug",
+    "wse": 97.743226,
+    "irr": 5.730526,
+    "turbine_outflow": 128.752258
+  },
+  {
+    "tahun": 2007,
+    "bulan": "Sep",
+    "wse": 94.370333,
+    "irr": 6.136757,
+    "turbine_outflow": 134.013667
+  },
+  {
+    "tahun": 2007,
+    "bulan": "Oct",
+    "wse": 89.950645,
+    "irr": 5.456477,
+    "turbine_outflow": 102.896129
+  },
+  {
+    "tahun": 2007,
+    "bulan": "Nov",
+    "wse": 92.398667,
+    "irr": 5.262387,
+    "turbine_outflow": 63.081333
+  },
+  {
+    "tahun": 2007,
+    "bulan": "Dec",
+    "wse": 95.999677,
+    "irr": 4.367455,
+    "turbine_outflow": 86.06129
+  },
+  {
+    "tahun": 2008,
+    "bulan": "Jan",
+    "wse": 100.347097,
+    "irr": 5.118548,
+    "turbine_outflow": 77.753548
+  },
+  {
+    "tahun": 2008,
+    "bulan": "Feb",
+    "wse": 101.146897,
+    "irr": 3.561914,
+    "turbine_outflow": 92.448966
+  },
+  {
+    "tahun": 2008,
+    "bulan": "Mar",
+    "wse": 102.546129,
+    "irr": 4.827871,
+    "turbine_outflow": 82.11871
+  },
+  {
+    "tahun": 2008,
+    "bulan": "Apr",
+    "wse": 106.834,
+    "irr": 4.77731,
+    "turbine_outflow": 115.910667
+  },
+  {
+    "tahun": 2008,
+    "bulan": "May",
+    "wse": 107.132258,
+    "irr": 5.165713,
+    "turbine_outflow": 112.477419
+  },
+  {
+    "tahun": 2008,
+    "bulan": "Jun",
+    "wse": 104.2055,
+    "irr": 4.793543,
+    "turbine_outflow": 97.571
+  },
+  {
+    "tahun": 2008,
+    "bulan": "Jul",
+    "wse": 101.169677,
+    "irr": 5.520032,
+    "turbine_outflow": 92.969032
+  },
+  {
+    "tahun": 2008,
+    "bulan": "Aug",
+    "wse": 98.204839,
+    "irr": 4.964135,
+    "turbine_outflow": 102.083871
+  },
+  {
+    "tahun": 2008,
+    "bulan": "Sep",
+    "wse": 97.192,
+    "irr": 5.851937,
+    "turbine_outflow": 129.695333
+  },
+  {
+    "tahun": 2008,
+    "bulan": "Oct",
+    "wse": 94.644516,
+    "irr": 5.252294,
+    "turbine_outflow": 142.086452
+  },
+  {
+    "tahun": 2008,
+    "bulan": "Nov",
+    "wse": 94.459667,
+    "irr": 4.70637,
+    "turbine_outflow": 164.513667
+  },
+  {
+    "tahun": 2008,
+    "bulan": "Dec",
+    "wse": 99.787742,
+    "irr": 4.568177,
+    "turbine_outflow": 194.472581
+  },
+  {
+    "tahun": 2009,
+    "bulan": "Jan",
+    "wse": 101.131935,
+    "irr": 4.226768,
+    "turbine_outflow": 135.716774
+  },
+  {
+    "tahun": 2009,
+    "bulan": "Feb",
+    "wse": 101.660714,
+    "irr": 4.0226,
+    "turbine_outflow": 112.208571
+  },
+  {
+    "tahun": 2009,
+    "bulan": "Mar",
+    "wse": 104.868065,
+    "irr": 5.622229,
+    "turbine_outflow": 135.033226
+  },
+  {
+    "tahun": 2009,
+    "bulan": "Apr",
+    "wse": 107.045333,
+    "irr": 4.90404,
+    "turbine_outflow": 145.472667
+  },
+  {
+    "tahun": 2009,
+    "bulan": "May",
+    "wse": 107.054516,
+    "irr": 4.630561,
+    "turbine_outflow": 179.296774
+  },
+  {
+    "tahun": 2009,
+    "bulan": "Jun",
+    "wse": 106.726,
+    "irr": 4.772087,
+    "turbine_outflow": 203.252
+  },
+  {
+    "tahun": 2009,
+    "bulan": "Jul",
+    "wse": 105.030968,
+    "irr": 5.344858,
+    "turbine_outflow": 190.805161
+  },
+  {
+    "tahun": 2009,
+    "bulan": "Aug",
+    "wse": 102.024194,
+    "irr": 5.642923,
+    "turbine_outflow": 187.628387
+  },
+  {
+    "tahun": 2009,
+    "bulan": "Sep",
+    "wse": 99.675667,
+    "irr": 6.013593,
+    "turbine_outflow": 148.856333
+  },
+  {
+    "tahun": 2009,
+    "bulan": "Oct",
+    "wse": 98.432581,
+    "irr": 5.65751,
+    "turbine_outflow": 148.916452
+  },
+  {
+    "tahun": 2009,
+    "bulan": "Nov",
+    "wse": 97.655667,
+    "irr": 4.78963,
+    "turbine_outflow": 148.798
+  },
+  {
+    "tahun": 2009,
+    "bulan": "Dec",
+    "wse": 99.173548,
+    "irr": 4.912303,
+    "turbine_outflow": 165.603548
+  },
+  {
+    "tahun": 2010,
+    "bulan": "Jan",
+    "wse": 99.312903,
+    "irr": 4.444339,
+    "turbine_outflow": 154.453548
+  },
+  {
+    "tahun": 2010,
+    "bulan": "Feb",
+    "wse": 101.929643,
+    "irr": 4.954429,
+    "turbine_outflow": 157.159286
+  },
+  {
+    "tahun": 2010,
+    "bulan": "Mar",
+    "wse": 107.236129,
+    "irr": 4.978274,
+    "turbine_outflow": 217.991935
+  },
+  {
+    "tahun": 2010,
+    "bulan": "Apr",
+    "wse": 107.261667,
+    "irr": 5.284817,
+    "turbine_outflow": 216.454333
+  },
+  {
+    "tahun": 2010,
+    "bulan": "May",
+    "wse": 107.085484,
+    "irr": 4.561568,
+    "turbine_outflow": 215.452968
+  },
+  {
+    "tahun": 2010,
+    "bulan": "Jun",
+    "wse": 107.060667,
+    "irr": 4.084617,
+    "turbine_outflow": 213.307667
+  },
+  {
+    "tahun": 2010,
+    "bulan": "Jul",
+    "wse": 106.845161,
+    "irr": 4.268265,
+    "turbine_outflow": 186.346129
+  },
+  {
+    "tahun": 2010,
+    "bulan": "Aug",
+    "wse": 105.007742,
+    "irr": 4.986368,
+    "turbine_outflow": 202.497097
+  },
+  {
+    "tahun": 2010,
+    "bulan": "Sep",
+    "wse": 102.519333,
+    "irr": 4.635953,
+    "turbine_outflow": 194.872
+  },
+  {
+    "tahun": 2010,
+    "bulan": "Oct",
+    "wse": 102.528387,
+    "irr": 4.962126,
+    "turbine_outflow": 189.645484
+  },
+  {
+    "tahun": 2010,
+    "bulan": "Nov",
+    "wse": 101.237,
+    "irr": 4.823097,
+    "turbine_outflow": 217.224
+  },
+  {
+    "tahun": 2010,
+    "bulan": "Dec",
+    "wse": 99.293871,
+    "irr": 4.286274,
+    "turbine_outflow": 215.800968
+  },
+  {
+    "tahun": 2011,
+    "bulan": "Jan",
+    "wse": 98.977097,
+    "irr": 4.159513,
+    "turbine_outflow": 202.981613
+  },
+  {
+    "tahun": 2011,
+    "bulan": "Feb",
+    "wse": 97.572143,
+    "irr": 4.548736,
+    "turbine_outflow": 127.545714
+  },
+  {
+    "tahun": 2011,
+    "bulan": "Mar",
+    "wse": 96.424194,
+    "irr": 4.820403,
+    "turbine_outflow": 102.974516
+  },
+  {
+    "tahun": 2011,
+    "bulan": "Apr",
+    "wse": 93.394333,
+    "irr": 4.87517,
+    "turbine_outflow": 101.331333
+  },
+  {
+    "tahun": 2011,
+    "bulan": "May",
+    "wse": 94.641613,
+    "irr": 4.60091,
+    "turbine_outflow": 105.005484
+  },
+  {
+    "tahun": 2011,
+    "bulan": "Jun",
+    "wse": 98.138667,
+    "irr": 4.971437,
+    "turbine_outflow": 137.218667
+  },
+  {
+    "tahun": 2011,
+    "bulan": "Jul",
+    "wse": 98.270645,
+    "irr": 5.007835,
+    "turbine_outflow": 159.402258
+  },
+  {
+    "tahun": 2011,
+    "bulan": "Aug",
+    "wse": 96.73129,
+    "irr": 5.700048,
+    "turbine_outflow": 166.221935
+  },
+  {
+    "tahun": 2011,
+    "bulan": "Sep",
+    "wse": 92.488,
+    "irr": 6.01658,
+    "turbine_outflow": 137.136667
+  },
+  {
+    "tahun": 2011,
+    "bulan": "Oct",
+    "wse": 90.21,
+    "irr": 5.345548,
+    "turbine_outflow": 128.670323
+  },
+  {
+    "tahun": 2011,
+    "bulan": "Nov",
+    "wse": 90.698,
+    "irr": 4.752423,
+    "turbine_outflow": 133.030667
+  },
+  {
+    "tahun": 2011,
+    "bulan": "Dec",
+    "wse": 94.514194,
+    "irr": 4.744432,
+    "turbine_outflow": 174.762258
+  },
+  {
+    "tahun": 2012,
+    "bulan": "Jan",
+    "wse": 95.037419,
+    "irr": 4.381603,
+    "turbine_outflow": 117.730323
+  },
+  {
+    "tahun": 2012,
+    "bulan": "Feb",
+    "wse": 95.063448,
+    "irr": 5.0163,
+    "turbine_outflow": 98.397931
+  },
+  {
+    "tahun": 2012,
+    "bulan": "Mar",
+    "wse": 98.555161,
+    "irr": 4.919161,
+    "turbine_outflow": 91.926452
+  },
+  {
+    "tahun": 2012,
+    "bulan": "Apr",
+    "wse": 102.075333,
+    "irr": 4.826233,
+    "turbine_outflow": 90.419667
+  },
+  {
+    "tahun": 2012,
+    "bulan": "May",
+    "wse": 104.287742,
+    "irr": 4.998968,
+    "turbine_outflow": 137.420323
+  },
+  {
+    "tahun": 2012,
+    "bulan": "Jun",
+    "wse": 103.417667,
+    "irr": 4.946167,
+    "turbine_outflow": 160.030667
+  },
+  {
+    "tahun": 2012,
+    "bulan": "Jul",
+    "wse": 100.845484,
+    "irr": 5.243868,
+    "turbine_outflow": 172.91129
+  },
+  {
+    "tahun": 2012,
+    "bulan": "Aug",
+    "wse": 97.29,
+    "irr": 5.925129,
+    "turbine_outflow": 156.761613
+  },
+  {
+    "tahun": 2012,
+    "bulan": "Sep",
+    "wse": 94.383,
+    "irr": 6.078297,
+    "turbine_outflow": 140.241333
+  },
+  {
+    "tahun": 2012,
+    "bulan": "Oct",
+    "wse": 91.117742,
+    "irr": 5.461965,
+    "turbine_outflow": 135.374516
+  },
+  {
+    "tahun": 2012,
+    "bulan": "Nov",
+    "wse": 91.363333,
+    "irr": 4.94885,
+    "turbine_outflow": 160.616667
+  },
+  {
+    "tahun": 2012,
+    "bulan": "Dec",
+    "wse": 96.417742,
+    "irr": 4.641719,
+    "turbine_outflow": 177.147419
+  },
+  {
+    "tahun": 2013,
+    "bulan": "Jan",
+    "wse": 101.217419,
+    "irr": 4.196832,
+    "turbine_outflow": 152.418387
+  },
+  {
+    "tahun": 2013,
+    "bulan": "Feb",
+    "wse": 104.313929,
+    "irr": 4.819386,
+    "turbine_outflow": 167.89
+  },
+  {
+    "tahun": 2013,
+    "bulan": "Mar",
+    "wse": 105.63129,
+    "irr": 5.222519,
+    "turbine_outflow": 151.86129
+  },
+  {
+    "tahun": 2013,
+    "bulan": "Apr",
+    "wse": 107.403,
+    "irr": 4.645137,
+    "turbine_outflow": 178.4928
+  },
+  {
+    "tahun": 2013,
+    "bulan": "May",
+    "wse": 107.48129,
+    "irr": 4.376435,
+    "turbine_outflow": 175.775806
+  },
+  {
+    "tahun": 2013,
+    "bulan": "Jun",
+    "wse": 107.097333,
+    "irr": 4.27877,
+    "turbine_outflow": 177.682333
+  },
+  {
+    "tahun": 2013,
+    "bulan": "Jul",
+    "wse": 107.017097,
+    "irr": 4.120403,
+    "turbine_outflow": 195.554194
+  },
+  {
+    "tahun": 2013,
+    "bulan": "Aug",
+    "wse": 106.458387,
+    "irr": 5.791039,
+    "turbine_outflow": 194.324516
+  },
+  {
+    "tahun": 2013,
+    "bulan": "Sep",
+    "wse": 104.226,
+    "irr": 5.987387,
+    "turbine_outflow": 195.679333
+  },
+  {
+    "tahun": 2013,
+    "bulan": "Oct",
+    "wse": 101.762258,
+    "irr": 5.792923,
+    "turbine_outflow": 197.410323
+  },
+  {
+    "tahun": 2013,
+    "bulan": "Nov",
+    "wse": 99.857,
+    "irr": 5.1368,
+    "turbine_outflow": 196.022667
+  },
+  {
+    "tahun": 2013,
+    "bulan": "Dec",
+    "wse": 99.154194,
+    "irr": 4.495565,
+    "turbine_outflow": 188.555806
+  },
+  {
+    "tahun": 2014,
+    "bulan": "Jan",
+    "wse": 102.187097,
+    "irr": 3.722439,
+    "turbine_outflow": 178.942903
+  },
+  {
+    "tahun": 2014,
+    "bulan": "Feb",
+    "wse": 104.206071,
+    "irr": 3.803664,
+    "turbine_outflow": 186.359286
+  },
+  {
+    "tahun": 2014,
+    "bulan": "Mar",
+    "wse": 105.435161,
+    "irr": 4.791013,
+    "turbine_outflow": 174.070323
+  },
+  {
+    "tahun": 2014,
+    "bulan": "Apr",
+    "wse": 107.412667,
+    "irr": 5.163867,
+    "turbine_outflow": 140.922667
+  },
+  {
+    "tahun": 2014,
+    "bulan": "May",
+    "wse": 107.316774,
+    "irr": 4.845413,
+    "turbine_outflow": 157.958065
+  },
+  {
+    "tahun": 2014,
+    "bulan": "Jun",
+    "wse": 106.985333,
+    "irr": 4.238303,
+    "turbine_outflow": 179.300667
+  },
+  {
+    "tahun": 2014,
+    "bulan": "Jul",
+    "wse": 106.546774,
+    "irr": 4.426739,
+    "turbine_outflow": 146.24
+  },
+  {
+    "tahun": 2014,
+    "bulan": "Aug",
+    "wse": 103.024194,
+    "irr": 5.518429,
+    "turbine_outflow": 146.141935
+  },
+  {
+    "tahun": 2014,
+    "bulan": "Sep",
+    "wse": 101.216667,
+    "irr": 6.358137,
+    "turbine_outflow": 149.264667
+  },
+  {
+    "tahun": 2014,
+    "bulan": "Oct",
+    "wse": 98.072258,
+    "irr": 5.743258,
+    "turbine_outflow": 192.314839
+  },
+  {
+    "tahun": 2014,
+    "bulan": "Nov",
+    "wse": 94.301,
+    "irr": 5.162707,
+    "turbine_outflow": 182.269333
+  },
+  {
+    "tahun": 2014,
+    "bulan": "Dec",
+    "wse": 95.489677,
+    "irr": 4.636597,
+    "turbine_outflow": 170.90129
+  },
+  {
+    "tahun": 2015,
+    "bulan": "Jan",
+    "wse": 99.019677,
+    "irr": 4.587942,
+    "turbine_outflow": 139.661935
+  },
+  {
+    "tahun": 2015,
+    "bulan": "Feb",
+    "wse": 100.1325,
+    "irr": 4.476314,
+    "turbine_outflow": 146.025714
+  },
+  {
+    "tahun": 2015,
+    "bulan": "Mar",
+    "wse": 103.277097,
+    "irr": 4.932742,
+    "turbine_outflow": 132.887419
+  },
+  {
+    "tahun": 2015,
+    "bulan": "Apr",
+    "wse": 107.362,
+    "irr": 4.631017,
+    "turbine_outflow": 173.363
+  },
+  {
+    "tahun": 2015,
+    "bulan": "May",
+    "wse": 106.455806,
+    "irr": 5.1131,
+    "turbine_outflow": 185.99129
+  },
+  {
+    "tahun": 2015,
+    "bulan": "Jun",
+    "wse": 104.245667,
+    "irr": 5.0501,
+    "turbine_outflow": 195.514333
+  },
+  {
+    "tahun": 2015,
+    "bulan": "Jul",
+    "wse": 100.041935,
+    "irr": 5.29889,
+    "turbine_outflow": 190.142903
+  },
+  {
+    "tahun": 2015,
+    "bulan": "Aug",
+    "wse": 96.944839,
+    "irr": 5.734574,
+    "turbine_outflow": 185.684839
+  },
+  {
+    "tahun": 2015,
+    "bulan": "Sep",
+    "wse": 92.794333,
+    "irr": 6.082083,
+    "turbine_outflow": 168.322333
+  },
+  {
+    "tahun": 2015,
+    "bulan": "Oct",
+    "wse": 89.822258,
+    "irr": 5.785894,
+    "turbine_outflow": 133.473548
+  },
+  {
+    "tahun": 2015,
+    "bulan": "Nov",
+    "wse": 88.475333,
+    "irr": 5.322673,
+    "turbine_outflow": 104.190333
+  },
+  {
+    "tahun": 2015,
+    "bulan": "Dec",
+    "wse": 92.887097,
+    "irr": 4.902239,
+    "turbine_outflow": 108.893548
+  },
+  {
+    "tahun": 2016,
+    "bulan": "Jan",
+    "wse": 95.321935,
+    "irr": 4.975026,
+    "turbine_outflow": 134.845161
+  },
+  {
+    "tahun": 2016,
+    "bulan": "Feb",
+    "wse": 96.057931,
+    "irr": 4.15871,
+    "turbine_outflow": 107.618621
+  },
+  {
+    "tahun": 2016,
+    "bulan": "Mar",
+    "wse": 101.953548,
+    "irr": 4.85911,
+    "turbine_outflow": 116.815806
+  },
+  {
+    "tahun": 2016,
+    "bulan": "Apr",
+    "wse": 107.223,
+    "irr": 4.885607,
+    "turbine_outflow": 220.653
+  },
+  {
+    "tahun": 2016,
+    "bulan": "May",
+    "wse": 107.339677,
+    "irr": 4.433265,
+    "turbine_outflow": 215.859677
+  },
+  {
+    "tahun": 2016,
+    "bulan": "Jun",
+    "wse": 107.126667,
+    "irr": 4.287627,
+    "turbine_outflow": 233.116333
+  },
+  {
+    "tahun": 2016,
+    "bulan": "Jul",
+    "wse": 106.104516,
+    "irr": 4.846794,
+    "turbine_outflow": 234.009677
+  },
+  {
+    "tahun": 2016,
+    "bulan": "Aug",
+    "wse": 104.920323,
+    "irr": 4.915945,
+    "turbine_outflow": 230.165258
+  },
+  {
+    "tahun": 2016,
+    "bulan": "Sep",
+    "wse": 104.379667,
+    "irr": 5.012737,
+    "turbine_outflow": 223.067333
+  },
+  {
+    "tahun": 2016,
+    "bulan": "Oct",
+    "wse": 104.994516,
+    "irr": 4.565758,
+    "turbine_outflow": 213.260323
+  },
+  {
+    "tahun": 2016,
+    "bulan": "Nov",
+    "wse": 107.140667,
+    "irr": 4.74682,
+    "turbine_outflow": 226.710333
+  },
+  {
+    "tahun": 2016,
+    "bulan": "Dec",
+    "wse": 107.07129,
+    "irr": 4.963477,
+    "turbine_outflow": 238.238387
+  },
+  {
+    "tahun": 2017,
+    "bulan": "Jan",
+    "wse": 103.99129,
+    "irr": 4.8612,
+    "turbine_outflow": 252.72129
+  },
+  {
+    "tahun": 2017,
+    "bulan": "Feb",
+    "wse": 101.3925,
+    "irr": 4.156375,
+    "turbine_outflow": 191.808929
+  },
+  {
+    "tahun": 2017,
+    "bulan": "Mar",
+    "wse": 104.677742,
+    "irr": 4.944442,
+    "turbine_outflow": 247.534194
+  },
+  {
+    "tahun": 2017,
+    "bulan": "Apr",
+    "wse": 105.295,
+    "irr": 4.859017,
+    "turbine_outflow": 250.381333
+  },
+  {
+    "tahun": 2017,
+    "bulan": "May",
+    "wse": 106.612903,
+    "irr": 4.753774,
+    "turbine_outflow": 243.043548
+  },
+  {
+    "tahun": 2017,
+    "bulan": "Jun",
+    "wse": 104.742667,
+    "irr": 4.29036,
+    "turbine_outflow": 181.037
+  },
+  {
+    "tahun": 2017,
+    "bulan": "Jul",
+    "wse": 103.697097,
+    "irr": 4.74769,
+    "turbine_outflow": 178.921935
+  },
+  {
+    "tahun": 2017,
+    "bulan": "Aug",
+    "wse": 102.321613,
+    "irr": 5.548042,
+    "turbine_outflow": 181.596774
+  },
+  {
+    "tahun": 2017,
+    "bulan": "Sep",
+    "wse": 99.193,
+    "irr": 5.66917,
+    "turbine_outflow": 197.151333
+  },
+  {
+    "tahun": 2017,
+    "bulan": "Oct",
+    "wse": 96.429032,
+    "irr": 5.378971,
+    "turbine_outflow": 218.270645
+  },
+  {
+    "tahun": 2017,
+    "bulan": "Nov",
+    "wse": 97.061333,
+    "irr": 4.733987,
+    "turbine_outflow": 239.178
+  },
+  {
+    "tahun": 2017,
+    "bulan": "Dec",
+    "wse": 97.84871,
+    "irr": 4.6938,
+    "turbine_outflow": 232.782258
+  },
+  {
+    "tahun": 2018,
+    "bulan": "Jan",
+    "wse": 96.44871,
+    "irr": 4.467274,
+    "turbine_outflow": 147.698387
+  },
+  {
+    "tahun": 2018,
+    "bulan": "Feb",
+    "wse": 96.130714,
+    "irr": 4.450161,
+    "turbine_outflow": 133.003214
+  },
+  {
+    "tahun": 2018,
+    "bulan": "Mar",
+    "wse": 101.654194,
+    "irr": 4.993068,
+    "turbine_outflow": 133.946774
+  },
+  {
+    "tahun": 2018,
+    "bulan": "Apr",
+    "wse": 104.415,
+    "irr": 5.155747,
+    "turbine_outflow": 181.881667
+  },
+  {
+    "tahun": 2018,
+    "bulan": "May",
+    "wse": 102.966774,
+    "irr": 5.077345,
+    "turbine_outflow": 197.760323
+  },
+  {
+    "tahun": 2018,
+    "bulan": "Jun",
+    "wse": 100.641,
+    "irr": 4.724893,
+    "turbine_outflow": 174.768333
+  },
+  {
+    "tahun": 2018,
+    "bulan": "Jul",
+    "wse": 99.010968,
+    "irr": 5.358574,
+    "turbine_outflow": 187.442903
+  },
+  {
+    "tahun": 2018,
+    "bulan": "Aug",
+    "wse": 97.296774,
+    "irr": 5.423519,
+    "turbine_outflow": 190.489355
+  },
+  {
+    "tahun": 2018,
+    "bulan": "Sep",
+    "wse": 93.243,
+    "irr": 5.9076,
+    "turbine_outflow": 159.357667
+  },
+  {
+    "tahun": 2018,
+    "bulan": "Oct",
+    "wse": 90.24871,
+    "irr": 5.797158,
+    "turbine_outflow": 145.016452
+  },
+  {
+    "tahun": 2018,
+    "bulan": "Nov",
+    "wse": 89.314333,
+    "irr": 4.98675,
+    "turbine_outflow": 144.362
+  },
+  {
+    "tahun": 2018,
+    "bulan": "Dec",
+    "wse": 92.620323,
+    "irr": 4.932052,
+    "turbine_outflow": 152.744194
+  },
+  {
+    "tahun": 2019,
+    "bulan": "Jan",
+    "wse": 91.653226,
+    "irr": 4.502029,
+    "turbine_outflow": 149.264516
+  },
+  {
+    "tahun": 2019,
+    "bulan": "Feb",
+    "wse": 92.563571,
+    "irr": 5.268332,
+    "turbine_outflow": 137.228929
+  },
+  {
+    "tahun": 2019,
+    "bulan": "Mar",
+    "wse": 96.697419,
+    "irr": 4.764765,
+    "turbine_outflow": 128.312258
+  },
+  {
+    "tahun": 2019,
+    "bulan": "Apr",
+    "wse": 101.166667,
+    "irr": 4.901063,
+    "turbine_outflow": 117.762667
+  },
+  {
+    "tahun": 2019,
+    "bulan": "May",
+    "wse": 105.476452,
+    "irr": 5.161197,
+    "turbine_outflow": 190.036129
+  },
+  {
+    "tahun": 2019,
+    "bulan": "Jun",
+    "wse": 103.277667,
+    "irr": 5.103497,
+    "turbine_outflow": 170.086
+  },
+  {
+    "tahun": 2019,
+    "bulan": "Jul",
+    "wse": 100.213871,
+    "irr": 5.320381,
+    "turbine_outflow": 184.816452
+  },
+  {
+    "tahun": 2019,
+    "bulan": "Aug",
+    "wse": 98.497419,
+    "irr": 5.670542,
+    "turbine_outflow": 191.338387
+  },
+  {
+    "tahun": 2019,
+    "bulan": "Sep",
+    "wse": 94.576333,
+    "irr": 6.202517,
+    "turbine_outflow": 183.473
+  },
+  {
+    "tahun": 2019,
+    "bulan": "Oct",
+    "wse": 90.446452,
+    "irr": 6.239784,
+    "turbine_outflow": 165.025484
+  },
+  {
+    "tahun": 2019,
+    "bulan": "Nov",
+    "wse": 86.685333,
+    "irr": 5.839457,
+    "turbine_outflow": 114.943
+  },
+  {
+    "tahun": 2019,
+    "bulan": "Dec",
+    "wse": 86.79129,
+    "irr": 4.967419,
+    "turbine_outflow": 87.407742
+  },
+  {
+    "tahun": 2020,
+    "bulan": "Jan",
+    "wse": 91.143871,
+    "irr": 4.372116,
+    "turbine_outflow": 84.468065
+  },
+  {
+    "tahun": 2020,
+    "bulan": "Feb",
+    "wse": 94.531034,
+    "irr": 4.032224,
+    "turbine_outflow": 98.575172
+  },
+  {
+    "tahun": 2020,
+    "bulan": "Mar",
+    "wse": 99.117419,
+    "irr": 4.84459,
+    "turbine_outflow": 108.187097
+  },
+  {
+    "tahun": 2020,
+    "bulan": "Apr",
+    "wse": 105.132333,
+    "irr": 4.801883,
+    "turbine_outflow": 189.539971
+  },
+  {
+    "tahun": 2020,
+    "bulan": "May",
+    "wse": 106.284839,
+    "irr": 4.428755,
+    "turbine_outflow": 193.100488
+  },
+  {
+    "tahun": 2020,
+    "bulan": "Jun",
+    "wse": 106.196333,
+    "irr": 4.76288,
+    "turbine_outflow": 170.48659
+  },
+  {
+    "tahun": 2020,
+    "bulan": "Jul",
+    "wse": 104.761935,
+    "irr": 4.875274,
+    "turbine_outflow": 177.401529
+  },
+  {
+    "tahun": 2020,
+    "bulan": "Aug",
+    "wse": 101.279355,
+    "irr": 5.351006,
+    "turbine_outflow": 202.279148
+  },
+  {
+    "tahun": 2020,
+    "bulan": "Sep",
+    "wse": 97.831667,
+    "irr": 5.856337,
+    "turbine_outflow": 215.36
+  },
+  {
+    "tahun": 2020,
+    "bulan": "Oct",
+    "wse": 95.535161,
+    "irr": 5.085687,
+    "turbine_outflow": 217.217097
+  },
+  {
+    "tahun": 2020,
+    "bulan": "Nov",
+    "wse": 93.593667,
+    "irr": 5.097697,
+    "turbine_outflow": 218.411667
+  },
+  {
+    "tahun": 2020,
+    "bulan": "Dec",
+    "wse": 89.923548,
+    "irr": 4.425419,
+    "turbine_outflow": 180.063226
+  },
+  {
+    "tahun": 2021,
+    "bulan": "Jan",
+    "wse": 90.220323,
+    "irr": 4.021013,
+    "turbine_outflow": 119.682903
+  },
+  {
+    "tahun": 2021,
+    "bulan": "Feb",
+    "wse": 95.159643,
+    "irr": 3.937264,
+    "turbine_outflow": 99.828571
+  },
+  {
+    "tahun": 2021,
+    "bulan": "Mar",
+    "wse": 97.646452,
+    "irr": 5.032461,
+    "turbine_outflow": 94.824839
+  },
+  {
+    "tahun": 2021,
+    "bulan": "Apr",
+    "wse": 98.302,
+    "irr": 5.227743,
+    "turbine_outflow": 100.705
+  },
+  {
+    "tahun": 2021,
+    "bulan": "May",
+    "wse": 98.646129,
+    "irr": 4.770442,
+    "turbine_outflow": 121.999677
+  },
+  {
+    "tahun": 2021,
+    "bulan": "Jun",
+    "wse": 99.238,
+    "irr": 4.167823,
+    "turbine_outflow": 122.657667
+  },
+  {
+    "tahun": 2021,
+    "bulan": "Jul",
+    "wse": 100.404839,
+    "irr": 5.030397,
+    "turbine_outflow": 149.738065
+  },
+  {
+    "tahun": 2021,
+    "bulan": "Aug",
+    "wse": 100.081613,
+    "irr": 5.147048,
+    "turbine_outflow": 196.961935
+  },
+  {
+    "tahun": 2021,
+    "bulan": "Sep",
+    "wse": 97.462,
+    "irr": 5.42163,
+    "turbine_outflow": 215.499
+  },
+  {
+    "tahun": 2021,
+    "bulan": "Oct",
+    "wse": 92.729677,
+    "irr": 5.402461,
+    "turbine_outflow": 226.235806
+  },
+  {
+    "tahun": 2021,
+    "bulan": "Nov",
+    "wse": 93.248,
+    "irr": 4.543387,
+    "turbine_outflow": 220.477333
+  },
+  {
+    "tahun": 2021,
+    "bulan": "Dec",
+    "wse": 95.418065,
+    "irr": 4.59031,
+    "turbine_outflow": 252.352581
+  },
+  {
+    "tahun": 2022,
+    "bulan": "Jan",
+    "wse": 94.34129,
+    "irr": 4.742852,
+    "turbine_outflow": 130.554516
+  },
+  {
+    "tahun": 2022,
+    "bulan": "Feb",
+    "wse": 94.083571,
+    "irr": 4.366189,
+    "turbine_outflow": 116.163571
+  },
+  {
+    "tahun": 2022,
+    "bulan": "Mar",
+    "wse": 93.975161,
+    "irr": 4.897594,
+    "turbine_outflow": 117.66129
+  },
+  {
+    "tahun": 2022,
+    "bulan": "Apr",
+    "wse": 97.945,
+    "irr": 4.93662,
+    "turbine_outflow": 113.966333
+  },
+  {
+    "tahun": 2022,
+    "bulan": "May",
+    "wse": 101.420645,
+    "irr": 4.402771,
+    "turbine_outflow": 131.790323
+  },
+  {
+    "tahun": 2022,
+    "bulan": "Jun",
+    "wse": 103.386333,
+    "irr": 4.049863,
+    "turbine_outflow": 182.242667
+  },
+  {
+    "tahun": 2022,
+    "bulan": "Jul",
+    "wse": 102.61871,
+    "irr": 4.5727,
+    "turbine_outflow": 201.64871
+  },
+  {
+    "tahun": 2022,
+    "bulan": "Aug",
+    "wse": 100.693548,
+    "irr": 5.225452,
+    "turbine_outflow": 196.357097
+  },
+  {
+    "tahun": 2022,
+    "bulan": "Sep",
+    "wse": 99.82,
+    "irr": 5.076963,
+    "turbine_outflow": 197.101333
+  },
+  {
+    "tahun": 2022,
+    "bulan": "Oct",
+    "wse": 101.444516,
+    "irr": 4.6823,
+    "turbine_outflow": 218.559355
+  },
+  {
+    "tahun": 2022,
+    "bulan": "Nov",
+    "wse": 101.731333,
+    "irr": 4.629467,
+    "turbine_outflow": 257.197
+  },
+  {
+    "tahun": 2022,
+    "bulan": "Dec",
+    "wse": 102.437097,
+    "irr": 4.478061,
+    "turbine_outflow": 213.422903
+  },
+  {
+    "tahun": 2023,
+    "bulan": "Jan",
+    "wse": 102.095161,
+    "irr": 4.656839,
+    "turbine_outflow": 203.697097
+  },
+  {
+    "tahun": 2023,
+    "bulan": "Feb",
+    "wse": 100.643929,
+    "irr": 3.892193,
+    "turbine_outflow": 142.890357
+  },
+  {
+    "tahun": 2023,
+    "bulan": "Mar",
+    "wse": 101.194516,
+    "irr": 4.888723,
+    "turbine_outflow": 132.957419
+  },
+  {
+    "tahun": 2023,
+    "bulan": "Apr",
+    "wse": 103.802667,
+    "irr": 5.14044,
+    "turbine_outflow": 142.886667
+  },
+  {
+    "tahun": 2023,
+    "bulan": "May",
+    "wse": 105.869032,
+    "irr": 4.722258,
+    "turbine_outflow": 192.010323
+  },
+  {
+    "tahun": 2023,
+    "bulan": "Jun",
+    "wse": 104.751333,
+    "irr": 4.671263,
+    "turbine_outflow": 176.499667
+  },
+  {
+    "tahun": 2023,
+    "bulan": "Jul",
+    "wse": 103.398387,
+    "irr": 4.883352,
+    "turbine_outflow": 201.027419
+  },
+  {
+    "tahun": 2023,
+    "bulan": "Aug",
+    "wse": 99.520323,
+    "irr": 5.613732,
+    "turbine_outflow": 200.993871
+  },
+  {
+    "tahun": 2023,
+    "bulan": "Sep",
+    "wse": 95.328333,
+    "irr": 6.257967,
+    "turbine_outflow": 187.086667
+  },
+  {
+    "tahun": 2023,
+    "bulan": "Oct",
+    "wse": 91.610323,
+    "irr": 6.247123,
+    "turbine_outflow": 171.898387
+  },
+  {
+    "tahun": 2023,
+    "bulan": "Nov",
+    "wse": 88.939667,
+    "irr": 5.289967,
+    "turbine_outflow": 146.409
+  },
+  {
+    "tahun": 2023,
+    "bulan": "Dec",
+    "wse": 90.219355,
+    "irr": 5.182684,
+    "turbine_outflow": 136.006129
+  },
+  {
+    "tahun": 2024,
+    "bulan": "Jan",
+    "wse": 95.267097,
+    "irr": 4.624452,
+    "turbine_outflow": 134.351935
+  },
+  {
+    "tahun": 2024,
+    "bulan": "Feb",
+    "wse": 97.966207,
+    "irr": 4.85881,
+    "turbine_outflow": 141.388966
+  },
+  {
+    "tahun": 2024,
+    "bulan": "Mar",
+    "wse": 101.777742,
+    "irr": 4.522432,
+    "turbine_outflow": 147.684194
+  },
+  {
+    "tahun": 2024,
+    "bulan": "Apr",
+    "wse": 104.080667,
+    "irr": 4.855457,
+    "turbine_outflow": 150.555
+  },
+  {
+    "tahun": 2024,
+    "bulan": "May",
+    "wse": 106.015161,
+    "irr": 4.750665,
+    "turbine_outflow": 167.119355
+  },
+  {
+    "tahun": 2024,
+    "bulan": "Jun",
+    "wse": 105.262,
+    "irr": 4.539837,
+    "turbine_outflow": 193.907333
+  },
+  {
+    "tahun": 2024,
+    "bulan": "Jul",
+    "wse": 104.088065,
+    "irr": 4.969148,
+    "turbine_outflow": 193.155161
+  },
+  {
+    "tahun": 2024,
+    "bulan": "Aug",
+    "wse": 101.929677,
+    "irr": 5.544345,
+    "turbine_outflow": 134.744194
+  },
+  {
+    "tahun": 2024,
+    "bulan": "Sep",
+    "wse": 97.913667,
+    "irr": 5.687117,
+    "turbine_outflow": 159.64
+  },
+  {
+    "tahun": 2024,
+    "bulan": "Oct",
+    "wse": 95.309355,
+    "irr": 5.806926,
+    "turbine_outflow": 162.71871
+  },
+  {
+    "tahun": 2024,
+    "bulan": "Nov",
+    "wse": 94.546333,
+    "irr": 4.670643,
+    "turbine_outflow": 148.617
+  },
+  {
+    "tahun": 2024,
+    "bulan": "Dec",
+    "wse": 98.407097,
+    "irr": 4.1115,
+    "turbine_outflow": 150.197419
+  },
+  {
+    "tahun": 2025,
+    "bulan": "Jan",
+    "wse": 97.642258,
+    "irr": 4.375929,
+    "turbine_outflow": 156.403226
+  },
+  {
+    "tahun": 2025,
+    "bulan": "Feb",
+    "wse": 97.849643,
+    "irr": 4.426475,
+    "turbine_outflow": 134.493929
+  },
+  {
+    "tahun": 2025,
+    "bulan": "Mar",
+    "wse": 102.336452,
+    "irr": 4.694374,
+    "turbine_outflow": 134.818065
+  },
+  {
+    "tahun": 2025,
+    "bulan": "Apr",
+    "wse": 104.484667,
+    "irr": 4.8268,
+    "turbine_outflow": 144.623
+  },
+  {
+    "tahun": 2025,
+    "bulan": "May",
+    "wse": 106.181935,
+    "irr": 4.441261,
+    "turbine_outflow": 139.823226
+  },
+  {
+    "tahun": 2025,
+    "bulan": "Jun",
+    "wse": 106.086333,
+    "irr": 4.152663,
+    "turbine_outflow": 140.062333
+  },
+  {
+    "tahun": 2025,
+    "bulan": "Jul",
+    "wse": 106.035484,
+    "irr": 4.76039,
+    "turbine_outflow": 145.437097
+  },
+  {
+    "tahun": 2025,
+    "bulan": "Aug",
+    "wse": 106.11129,
+    "irr": 4.910368,
+    "turbine_outflow": 144.441613
+  },
+  {
+    "tahun": 2025,
+    "bulan": "Sep",
+    "wse": 104.406333,
+    "irr": 5.446673,
+    "turbine_outflow": 106.634
+  },
+  {
+    "tahun": 2025,
+    "bulan": "Oct",
+    "wse": 101.52129,
+    "irr": 5.296987,
+    "turbine_outflow": 151.489355
+  },
+  {
+    "tahun": 2025,
+    "bulan": "Nov",
+    "wse": 103.657333,
+    "irr": 5.034403,
+    "turbine_outflow": 172.141667
+  },
+  {
+    "tahun": 2025,
+    "bulan": "Dec",
+    "wse": 103.723226,
+    "irr": 4.726477,
+    "turbine_outflow": 190.94
+  }
+]

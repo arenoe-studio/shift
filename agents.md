@@ -12,7 +12,7 @@
 
 | Key | Value |
 |---|---|
-| Status | 🟡 In Progress |
+| Status | 🟢 MVP Complete |
 | Frontend | Next.js → Vercel |
 | Backend | FastAPI → Coolify (Ubuntu Server) |
 | Last updated | 2026-05-13 |
@@ -23,44 +23,41 @@
 ## Repo Structure
 
 ```
-shift-plus/
-├── apps/
-│   ├── frontend/
-│   │   ├── app/
-│   │   │   ├── page.tsx
-│   │   │   └── layout.tsx
-│   │   ├── components/
-│   │   │   ├── widgets/
-│   │   │   ├── charts/
-│   │   │   └── ui/
-│   │   ├── lib/
-│   │   │   ├── api.ts
-│   │   │   └── constants.ts
-│   │   └── types/
-│   │       └── index.ts
-│   └── backend/
-│       ├── main.py
-│       ├── routers/
-│       │   ├── waduk.py
-│       │   ├── bmkg.py
-│       │   ├── solar.py
-│       │   └── rekomendasi.py
-│       ├── services/
-│       │   ├── waduk_service.py
-│       │   ├── bmkg_service.py
-│       │   ├── solar_service.py
-│       │   └── shift_engine.py
-│       ├── data/
-│       │   └── pjt2_historical.json
-│       └── models/
-│           └── schemas.py
+project-root/
+├── app/
+│   ├── page.tsx
+│   └── layout.tsx
+├── components/
+│   ├── layout/
+│   ├── widgets/
+│   ├── charts/
+│   ├── tables/
+│   └── ui/
+├── lib/
+│   ├── api.ts
+│   └── constants.ts
+├── types/
+│   └── index.ts
+├── backend/
+│   ├── main.py
+│   ├── routers/
+│   │   ├── waduk.py
+│   │   ├── bmkg.py
+│   │   ├── solar.py
+│   │   └── rekomendasi.py
+│   ├── services/
+│   │   ├── waduk_service.py
+│   │   ├── bmkg_service.py
+│   │   ├── solar_service.py
+│   │   └── shift_engine.py
+│   ├── data/
+│   ├── models/
+│   │   └── schemas.py
+│   └── scripts/
+│       └── seed.py
 ├── docs/
-│   ├── 01-project-brief-techstack.md
-│   ├── 02-frontend.md
-│   ├── 03-backend.md
-│   └── 04-implementation-notes.md
-├── claude.md
-└── README.md
+├── DESIGN.md
+└── .gitignore
 ```
 
 ---
@@ -69,7 +66,7 @@ shift-plus/
 
 Update tabel ini setiap `npm install` atau `pip install` baru.
 
-### Frontend (`apps/frontend`)
+### Frontend (repo root)
 | Package | Fungsi | Status |
 |---|---|---|
 | next | Framework utama, App Router | — |
@@ -77,8 +74,10 @@ Update tabel ini setiap `npm install` atau `pip install` baru.
 | recharts | Grafik WSE, energi | — |
 | axios | HTTP client ke backend | — |
 | lucide-react | Icon set | — |
+| framer-motion | Sidebar animation + motion UI | — |
+| sharp | Optimize assets (PNG→WebP) | ✅ |
 
-### Backend (`apps/backend`)
+### Backend (`backend/`)
 | Package | Fungsi | Status |
 |---|---|---|
 | fastapi | Framework API | — |
@@ -86,6 +85,10 @@ Update tabel ini setiap `npm install` atau `pip install` baru.
 | pandas | Kalkulasi data PJT II | — |
 | httpx | Proxy request BMKG | — |
 | python-dotenv | Env variable | — |
+| asyncpg | Driver PostgreSQL async | ✅ (py312) |
+| sqlalchemy[asyncio] | ORM async engine/session | ✅ (py312) |
+| psycopg2-binary | Driver sync (ops/debug) | ✅ (py312) |
+| (schema) waduk_daily | New daily table | ✅ |
 
 ---
 
@@ -98,12 +101,49 @@ Update setiap fungsi baru dibuat atau diubah.
 ### Frontend
 | Fungsi | File | Lines | I/O | Memanggil |
 |---|---|---|---|---|
-| — | — | — | — | — |
+| getWadukCurrent | lib/api.ts | L11-14 | — → WadukData | axios instance |
+| getWeather | lib/api.ts | L16-19 | — → WeatherData | axios instance |
+| getSolarIrradiance | lib/api.ts | L21-24 | — → SolarData | axios instance |
+| getRekomendasi | lib/api.ts | L26-29 | — → RekomendasiData | axios instance |
+| getWadukHistory | lib/api.ts | L31-34 | days:number → WadukHistory | axios instance |
+| getForecast | lib/api.ts | L36-39 | — → ForecastDay[] | axios instance |
+| getWadukLog | lib/api.ts | L41-44 | days:number → WadukLogItem[] | axios instance |
+| HeroHeader | components/layout/HeroHeader.tsx | L1-100 | bmkgStatus,neondbStatus,nasaStatus,lastUpdated → JSX | framer-motion |
+| Sidebar | components/layout/Sidebar.tsx | L1-85 | props → JSX | next/link, usePathname, framer-motion, lucide |
+| AppShell + useAppShell | components/layout/AppShell.tsx | L1-80 | children → JSX | Sidebar, HeroHeader ctx, framer-motion, next/link, usePathname |
+| AlertBar | components/ui/AlertBar.tsx | L16-26 | status,message → JSX | lucide |
+| MetricCard | components/ui/MetricCard.tsx | L15-41 | props → JSX | lucide icons |
+| DataStatusBar | components/ui/DataStatusBar.tsx | L16-51 | props → JSX | — |
+| WadukWidget | components/widgets/WadukWidget.tsx | L24-52 | WadukData → JSX | Card, StatusChip, Badge, constants |
+| WeatherWidget | components/widgets/WeatherWidget.tsx | L34-88 | WeatherData → JSX | Card, Badge, lucide icons |
+| SolarWidget | components/widgets/SolarWidget.tsx | L18-50 | SolarData → JSX | Card, StatusChip, constants |
+| RekomendasiWidget | components/widgets/RekomendasiWidget.tsx | L16-115 | RekomendasiData → JSX | Card(glass), StatusChip, Badge |
+| getIrrFallbackForDate | lib/constants.ts | L26-29 | d?:Date → number | IRR_MONTHLY_FALLBACK |
+| BenefitSummary | components/widgets/BenefitSummary.tsx | L36-51 | rekomendasi,solar → JSX | Card, SectionHeader, lucide |
+| DispatchRecommendation | components/widgets/DispatchRecommendation.tsx | L15-92 | data:RekomendasiData → JSX | Card, SectionHeader, StatusChip, lucide |
+| ForecastStrip | components/widgets/ForecastStrip.tsx | L43-140 | data:ForecastDay[] → JSX | Card, SectionHeader, lucide |
+| WseChart | components/charts/WseChart.tsx | L43-131 | data:WadukHistory,days → JSX | Card, Divider, SectionHeader, recharts |
+| GhiTurbineChart | components/charts/GhiTurbineChart.tsx | L43-121 | data:WadukHistory,days → JSX | Card, Divider, SectionHeader, recharts |
+| ForecastTable | components/tables/ForecastTable.tsx | L1-134 | data:ForecastDay[] → JSX | Card, SectionHeader, StatusChip, Badge, lucide |
+| ForecastWseChart | components/charts/ForecastWseChart.tsx | L1-117 | data:ForecastDay[] → JSX | Card, SectionHeader, recharts |
+| ForecastEnergyChart | components/charts/ForecastEnergyChart.tsx | L1-98 | data:ForecastDay[] → JSX | Card, SectionHeader, recharts |
+| LogTable | components/tables/LogTable.tsx | L1-140 | data,days,onDaysChange → JSX | Card, SectionHeader, StatusChip, lucide |
+| Header | components/ui/Header.tsx | L11-35 | props → JSX | StatusChip, Divider |
+| Home (Dashboard) | app/page.tsx | L30-184 | — → JSX | AppShell ctx, AlertBar, MetricCard, DispatchRecommendation, BenefitSummary, DailyChart |
+| ForecastPage | app/forecast/page.tsx | L1-97 | — → JSX | ForecastTable, ForecastWseChart, ForecastEnergyChart, LogTable |
 
 ### Backend
 | Fungsi | File | Lines | I/O | Memanggil |
 |---|---|---|---|---|
-| — | — | — | — | — |
+| get_db | backend/database.py | L44-46 | — → AsyncSession | — |
+| create_tables | backend/scripts/create_tables.py | L15-17 | — → create tables | Base.metadata |
+| get_current_waduk | backend/services/waduk_service.py | L69-91 | — → WadukCurrentSchema | AsyncSessionLocal, WadukDaily, numpy.interp |
+| get_waduk_history | backend/services/waduk_service.py | L94-116 | days:int → list[WadukHistoryItem] | AsyncSessionLocal, WadukDaily |
+| get_waduk_log | backend/services/waduk_service.py | L119-143 | days:int → list[WadukLogItem] | AsyncSessionLocal, WadukDaily, numpy.interp |
+| get_weather | backend/services/bmkg_service.py | L127-199 | — → WeatherSchema | httpx.AsyncClient, _weather_cache |
+| get_irradiance | backend/services/solar_service.py | L43-115 | — → SolarSchema | httpx.AsyncClient, IRR_MONTHLY_FALLBACK |
+| compute | backend/services/shift_engine.py | L16-58 | wse,curah_hujan,irr → RekomendasiSchema | constants in-module |
+| get_forecast | backend/services/forecast_service.py | L63-132 | — → list[ForecastDaySchema] | get_weather, waduk_daily, shift_engine.compute |
 
 ---
 
@@ -111,10 +151,14 @@ Update setiap fungsi baru dibuat atau diubah.
 
 | Method | Path | Service | Returns | Dipanggil dari |
 |---|---|---|---|---|
+| GET | `/health` | backend/main.py | status ok | — |
 | GET | `/api/waduk/current` | waduk_service | WSE, volume, bulan | `api.ts` |
+| GET | `/api/waduk/history` | waduk_service | list WSE history (param: days) | `api.ts` |
+| GET | `/api/waduk/log` | waduk_service | log harian (param: days) | `api.ts` |
 | GET | `/api/bmkg/weather` | bmkg_service | cuaca, prakiraan hujan | `api.ts` |
 | GET | `/api/solar/irradiance` | solar_service | IRR harian (kWh/m²) | `api.ts` |
 | GET | `/api/rekomendasi` | shift_engine | dispatch MW, status, alasan | `api.ts` |
+| GET | `/api/forecast` | forecast_service | forecast 7 hari (BMKG+proyeksi) | — |
 
 ---
 
@@ -140,7 +184,9 @@ Ketiga data di atas
 
 | ID | Status | File | Line | Deskripsi | Solusi |
 |---|---|---|---|---|---|
-| — | — | — | — | — | — |
+| KI-001 | ✅ Resolved | backend/services/waduk_service.py | L107 | History sorting alfabet (bulan) | Sort by tahun + month order map |
+| KI-002 | ✅ Resolved | backend/services/waduk_service.py | L83 | Volume selalu 0.0 (WSE→Volume) | Interp dari `backend/data/elevation_volume.csv` |
+| KI-003 | ✅ Resolved | backend/services/bmkg_service.py | L12 | BMKG wilayah salah (Sukabumi) | Set code Purwakarta (Jatiluhur) + fallback candidates |
 
 ---
 
@@ -151,4 +197,152 @@ Format: `[YYYY-MM-DD] [file/area] perubahan singkat`
 ```
 [2026-05-13] [init] repo scaffolded, Next.js installed, backend structure created
 [2026-05-13] [cleanup] removed legacy apps/ monorepo folder
+[2026-05-13] [backend] NeonDB connected, waduk_data table created (seed pending)
+[2026-05-13] [backend] pjt2_historical.json generated, 312 rows seeded
+[2026-05-13] [backend] waduk service + router implemented
+[2026-05-13] [backend] bmkg/solar services + shift_engine + routers + main wired
+[2026-05-13] [backend] add __init__.py for routers/services
+[2026-05-13] [backend] all services + endpoints implemented and tested
+[2026-05-13] [backend] fixed history sorting, volume estimation from CSV curve, BMKG wilayah code
+[2026-05-13] [frontend] types, constants, api.ts, and 5 primitive components created
+[2026-05-13] [docs] extracted Widget + RekomendasiWidget field requirements
+[2026-05-13] [frontend] 4 widgets implemented
+[2026-05-13] [frontend] WseChart implemented (AreaChart + reference lines)
+[2026-05-13] [frontend] Header implemented (status bar + last updated)
+[2026-05-13] [frontend] page.tsx assembled (fetch 5 endpoints + skeleton + null fallback)
+[2026-05-13] [frontend] fonts updated (Poppins + DM Sans) + tailwind fontFamily vars
+[2026-05-13] [frontend] chart, header, page assembly complete — dashboard fully rendered
+[2026-05-13] [planning] reviewed docs/02-frontend.md + DESIGN.md for redesign
+[2026-05-13] [frontend] installed framer-motion
+[2026-05-13] [backend] solar_service filter -999 IRR + safe today fallback
+[2026-05-13] [frontend] add AppShell + fixed Sidebar (collapse + motion)
+[2026-05-13] [frontend] add AlertBar, MetricCard, DailyChart, TurbineControl, BenefitSummary
+[2026-05-13] [backend] waduk history include irr + turbine_outflow
+[2026-05-13] [frontend] rebuild app/page.tsx dashboard layout (metrics + chart + control)
+[2026-05-13] [frontend] fix DailyChart tooltip TS typing
+[2026-05-13] [frontend] full dashboard redesign — sidebar, alert bar, metric cards, turbine control, daily chart, benefit summary
+[2026-05-13] [fix] IRR sentinel, negative value guards, number formatting
+[2026-05-13] [migration] waduk_data replaced with waduk_daily (daily resolution, 9497 rows: 2000-01-01 → 2025-12-31), chart updated to 30/90/365 day filter
+[2026-05-13] [frontend] dashboard layout restructured — dispatch recommendation replaces slider, benefit summary vertical, chart full width
+[2026-05-13] [frontend] DailyChart rebuilt as stacked dual-chart — WSE top, GHI+Turbine bottom
+[2026-05-13] [backend] forecast endpoint added, 7-day projection
+[2026-05-13] [frontend] forecast strip + data status bar added to dashboard
+[2026-05-13] [frontend] ForecastStrip expanded, charts split into WseChart + GhiTurbineChart
+[2026-05-13] [frontend] charts layout stacked (1 column)
+[2026-05-13] [backend] add /api/waduk/log endpoint (log harian + volume + status)
+[2026-05-13] [frontend] add WadukLogItem type + getWadukLog client
+[2026-05-13] [frontend] add ForecastTable + ForecastWseChart + ForecastEnergyChart + LogTable components
+[2026-05-13] [frontend] add /forecast page (Forecast & Log)
+[2026-05-13] [frontend] sidebar nav: Link + active via usePathname
+[2026-05-13] [frontend+backend] Forecast & Log page complete
+[2026-05-13] [debug] set NEXT_PUBLIC_API_URL to http://localhost:8001 (local backend port)
+[2026-05-13] [design] designmd kit download blocked (missing DESIGNMD_API_KEY)
+[2026-05-13] [design] user set DESIGNMD_API_KEY but current session env not updated (needs restart or session export)
+[2026-05-13] [design] tailwind theme tokens: primary/gold/surface/border + shadows
+[2026-05-13] [design] globals.css: base bg/text + primary/gold/bg CSS variables
+[2026-05-13] [design] Sidebar: navy bg + gold active indicator + /logo.webp placement
+[2026-05-13] [design] AlertBar: success/warn/error palette + icon colors
+[2026-05-13] [design] Card: radius 14 + border/shadows + glass styling
+[2026-05-13] [design] Badge: navy/blue/neutral + semantic background colors
+[2026-05-13] [design] StatusChip: semantic bg/text + pulsing dot colors
+[2026-05-13] [design] DataStatusBar: white surface + semantic live/cached/error dots
+[2026-05-13] [design] Header: navy title + white surface/border tokens
+[2026-05-13] [design] MetricCard: card border/radius/shadows + typography colors
+[2026-05-13] [design] WadukWidget: status border colors (success/warn/error)
+[2026-05-13] [design] DispatchRecommendation: navy/ink KPI colors for Turbin/FPV/Total
+[2026-05-13] [design] ForecastStrip: card borders + Live/Est. badge palette
+[2026-05-13] [design] BenefitSummary: icon colors (navy/green/gold)
+[2026-05-13] [design] WseChart: navy area series + tokenized grid + filter buttons
+[2026-05-13] [design] GhiTurbineChart: gold GHI line + slate turbine bars + grid token
+[2026-05-13] [design] ForecastWseChart: navy line + tokenized grid
+[2026-05-13] [design] ForecastEnergyChart: navy+gold bars + ink total line + grid token
+[2026-05-13] [design] ForecastTable: header/row palette + Live/Est badges + status borders
+[2026-05-13] [design] LogTable: navy filter buttons + ghost export + table palette tokens
+[2026-05-13] [design] Dashboard page skeleton: bg-subtle token (#F1F5F9)
+[2026-05-13] [design] Forecast page skeleton: bg-subtle token (#F1F5F9)
+[2026-05-13] [design] applied SHIFT+ navy+gold design system, replaced all red accents
+[2026-05-13] [design] refined technical redesign — JetBrains Mono, navy+gold system, WattVision-inspired hierarchy
+[2026-05-13] [design] switched to light sidebar (white bg, navy text/accent, gold active indicator), WattVision-inspired hierarchy, monospace KPIs 42-56px, subtle card accents, #F4F6F9 page bg
+[2026-05-13] [frontend] mobile responsive layout — floating bottom nav pill, 2-col metric grid, stacked sections, table column hiding, chart height responsive, scaled KPI typography
+[2026-05-13] [frontend] hero header added (logo + subtitle + data source status dots + timestamp, dot pattern bg, fade-in animation), mobile nav switched to frosted glass pill with navy icons + gold dot indicator
+[2026-05-13] [frontend] add static asset public/logo.webp (from components/logo)
+[2026-05-13] [frontend] AppShell: decorative fixed background logo on all pages
+[2026-05-13] [frontend] HeroHeader redesign: gradient overlay + dot texture + status pills/dots
+[2026-05-13] [frontend] hero section redesigned with gradient + dot texture + logo, decorative background logo added to all pages
+[2026-05-13] [polish] hero height increased, metric cards fit-to-content
+[2026-05-13] [cleanup] removed root/backend dev logs + backend/test_nasa.py (uvicorn.*.log pending delete: file lock)
+[2026-05-13] [cleanup] expanded root .gitignore (deps/env/python/logs/build/ide + ignore components/logo/)
+[2026-05-13] [cleanup] logo optimized: PNG → WebP (public/logo.webp), updated img src refs, deleted public/logo.png
+[2026-05-13] [cleanup] removed log files and test scripts, optimized logo to WebP, updated .gitignore for production
+[2026-05-13] [cleanup] git hygiene: ignore .claude/ local state (prevent accidental commit)
 ```
+
+
+<claude-mem-context>
+# Memory Context
+
+# [shift+] recent context, 2026-05-13 10:47pm GMT+7
+
+Legend: 🎯session 🔴bugfix 🟣feature 🔄refactor ✅change 🔵discovery ⚖️decision 🚨security_alert 🔐security_note
+Format: ID TIME TYPE TITLE
+Fetch details: get_observations([IDs]) | Search: mem-search skill
+
+Stats: 50 obs (17,742t read) | 504,129t work | 96% savings
+
+### May 13, 2026
+S29 Mobile responsive layout for SHIFT+ dashboard — floating bottom nav, scaled typography, stacked sections, table column hiding (May 13, 4:32 PM)
+S28 Uninstall RTK tools from Claude Code on Windows due to frequent PowerShell command failures (May 13, 4:32 PM)
+40 4:33p 🟣 Sidebar.tsx: Hidden on Mobile via max-md:hidden
+41 " 🟣 MetricCard.tsx: Responsive Typography and Padding for Mobile
+42 4:34p 🟣 DispatchRecommendation.tsx: Mobile Typography Scaling and Text Clamping
+43 " 🟣 ForecastStrip.tsx: Edge-Bleed Scroll Container and Tighter Card Widths for Mobile
+44 " 🟣 BenefitSummary.tsx: Row Value Scaled Down and Padding Normalized for Mobile
+45 " 🟣 WseChart.tsx: Responsive Height Container and Smaller Axis Ticks
+46 4:35p 🟣 GhiTurbineChart.tsx: Same Responsive Height Pattern Applied as WseChart
+47 " 🟣 LogTable.tsx: GHI and Volume Columns Hidden on Mobile, Full Responsive Table Treatment
+48 " 🟣 ForecastTable.tsx: Suhu and IRR Columns Hidden on Mobile, min-w Reduced to 800px
+49 4:36p 🟣 app/page.tsx: Dashboard Page Layout Fully Responsive — 2-col Metrics, Stacked Sections, Compact Padding
+50 " 🟣 app/forecast/page.tsx: Forecast Page Layout Made Mobile Responsive
+51 4:41p 🟣 Mobile Responsive Dashboard — Floating Bottom Nav + Full Layout Overhaul
+52 " ✅ Next.js Production Build Succeeded Post Mobile Responsive Changes
+53 " ✅ Agents.md Changelog Updated with Mobile Responsive Entry
+54 5:06p 🟣 HeroHeader Component Created for SHIFT+ Dashboard
+55 " 🟣 Mobile Bottom Nav Switched to Frosted Glass Pill Style
+56 " 🔵 DESIGN.md Belongs to a Different Project (WattVision, not SHIFT+)
+57 " 🔵 Existing DataStatusBar Component Structure Before Removal
+58 5:07p 🟣 HeroHeader.tsx Created — Full Implementation Details
+59 " 🟣 Mobile Bottom Nav Frosted Glass Applied in AppShell.tsx (Not Sidebar.tsx)
+60 " ✅ app/page.tsx Import Swapped: DataStatusBar → HeroHeader
+61 5:08p ✅ HeroHeader Integrated in Both Pages; Forecast Page Uses Partial Status Data
+62 " 🔴 Missing Closing Div Fixed in app/forecast/page.tsx
+63 " ✅ Agents.md Updated: HeroHeader Registered, Changelog Appended
+64 " 🔵 Production Build Passes Clean After HeroHeader and Frosted Glass Nav Changes
+S30 SHIFT+ Dashboard UI Refresh — HeroHeader component + frosted glass mobile bottom nav (frontend-only, no backend changes) (May 13, 5:08 PM)
+65 6:03p 🟣 HeroHeader.tsx — Full Visual Redesign with Gradient, Dot Texture & Framer Motion
+66 " 🟣 AppShell.tsx — Fixed Decorative Background Logo Added to All Pages
+67 " ✅ Logo Asset Copied to Public Directory for Static Serving
+68 " ✅ Agents.md Changelog Updated for 2026-05-13 Visual Polish Session
+69 6:06p 🟣 Hero Section Full Redesign — SHIFT+ Dashboard
+70 " 🟣 Decorative Background Logo Added to All Pages via AppShell
+71 " ✅ Logo Asset Copied to Public Directory for Static Serving
+72 " ✅ Agents.md Changelog Updated for 2026-05-13 Visual Polish Session
+73 6:07p 🔵 DESIGN.md Contains Stale WattVision Design Spec — Not SHIFT+
+74 " 🟣 Decorative Background Logo Added to AppShell
+75 " 🟣 HeroHeader Redesigned with Tri-State Status Dots, Pills, and motion.header
+76 " ✅ HeroHeader Status Props Updated in Both Pages to Match New Tri-State API
+77 6:21p 🟣 SHIFT+ Hero Section Redesign + Decorative Background Logo
+78 " 🟣 SHIFT+ Visual Polish Build Verified and Deployed Successfully
+79 10:04p ✅ HeroHeader Desktop & Mobile Spacing Polish
+80 " ✅ MetricCard Fit-to-Content Sizing Refactor
+81 " ✅ Agents.md Changelog Entry for 2026-05-13 Polish Session
+82 10:07p 🔴 HeroHeader Patch Required Two-Pass Strategy After Initial Context Mismatch
+83 " ✅ Mobile Subtitle Row Extracted to Standalone Element in HeroHeader
+84 " ✅ MetricCard Spacer Elements Removed to Achieve Fit-to-Content Height
+85 " ✅ AGENTS.md Changelog Entry Appended for 2026-05-13 Polish Session
+86 10:39p ✅ HeroHeader.tsx — increased vertical breathing room on desktop and mobile
+87 " ✅ MetricCard.tsx — removed fixed height, tightened padding to fit content snugly
+88 " ✅ Agents.md changelog updated for 2026-05-13 polish session
+89 " ✅ Polish session fully verified — build clean, dev server live, all changes confirmed in-file
+
+Access 504k tokens of past work via get_observations([IDs]) or mem-search skill.
+</claude-mem-context>
